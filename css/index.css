@@ -1,1 +1,11 @@
 
+.topnav {
+    background-color: #D1E3C5;
+}
+
+/* style inside navbar */
+
+/* when hovered */
+.topnav :hover {
+    background-color: #FEFEE380;
+}
