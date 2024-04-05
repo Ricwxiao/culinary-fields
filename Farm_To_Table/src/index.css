@@ -70,3 +70,9 @@ body {
 .nav-bar .nav-item .nav-link:hover {
 	color: var(--secondary-color);
 }
+
+.badge {
+    display: flex;
+    background-color: aliceblue;
+    margin: 1em;
+    max-width: 20vw;

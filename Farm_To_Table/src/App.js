@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate, Switch } from "react-router-dom";
+import FarmerInfo from "./components/FarmerInfo/FarmerInfo";
 import './App.css';
 
 // import component pages
