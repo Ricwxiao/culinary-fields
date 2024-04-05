@@ -31,5 +31,5 @@ function Navbar() {
     </nav>
 )
 }
-
+// example
 export default Navbar;
