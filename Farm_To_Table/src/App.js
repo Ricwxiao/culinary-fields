@@ -1,4 +1,10 @@
 // import './App.css';
+import Home from './components/Home.js';
+import {
+  Routes,
+  Route,
+  BrowserRouter as Router
+} from 'react-router-dom'
 
 function App() {
   return (
@@ -19,8 +25,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <Router>
+          <Routes>
+            <Route path="home" element={<HomePage />} />
+          </Routes>
+      </Router>
     </div>
   );
 }
+
 
 export default App;
