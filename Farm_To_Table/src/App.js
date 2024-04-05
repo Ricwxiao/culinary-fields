@@ -1,4 +1,5 @@
 // import './App.css';
+import FarmerInfo from "./components/FarmerInfo/FarmerInfo";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <p><strong>TEST!</strong> The following is Farmer Info</p>
+      <FarmerInfo farmName="Tian Tian Farm" />
     </div>
   );
 }
