@@ -20,8 +20,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <p><strong>TEST!</strong> The following is Farmer Info</p>
-      <FarmerInfo farmName="Tian Tian Farm" />
     </div>
   );
 }
