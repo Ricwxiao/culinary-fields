@@ -13,6 +13,21 @@ import React from 'react';
  - Drop Shadow Effect
 */
 
+
+
+export default function HomePage(props) {
+  return (
+    <div className="HomePage">
+      <header className="first-title">
+        <h1 className="first-header"> Spotlight </h1>
+        <a href = "link address"> <img src=""></img></a>
+      </main>
+    </div>
+  )
+
+}
+
+/*
 export default function HomePage(props) {
   return (
     <div className="HomePage">
@@ -38,6 +53,5 @@ export default function HomePage(props) {
   )
 
 }
-
-
+*/
 
