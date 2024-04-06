@@ -20,8 +20,8 @@ export default function HomePage(props) {
     <div className="HomePage">
       <header className="first-title">
         <h1 className="first-header"> Spotlight </h1>
-        <a href = "link address"> <img src=""></img></a>
-      </main>
+      </header>
+      <img src="/images/spotlight.jpg" alt="farmer spotlight"  width="1280px" height="720px"> </img>
     </div>
   )
 

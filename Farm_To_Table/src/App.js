@@ -1,38 +1,33 @@
-// import './App.css';
-import Home from './components/Home.js';
-import {
-  Routes,
-  Route,
-  BrowserRouter as Router
-} from 'react-router-dom'
+import React, { useState } from 'react';
+import { Component } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate, Switch } from "react-router-dom";
+import './App.css';
+import Home from "./components/Home";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          <h1>
-            Hello World
-          </h1>
-
-        </div>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Router>
-          <Routes>
-            <Route path="home" element={<HomePage />} />
-          </Routes>
-      </Router>
-    </div>
+    <div>
+    <Routes>
+      <Route path="/" element={<Home/>}>
+          {/* <Route path="/Home" element={<Home/>} /> */}
+          <Route path="/farmfinder" element={<farmfinder/>} />
+      </Route>
+    </Routes>
+  </div>
   );
 }
 
+---
 
-export default App;
+export default function App() {
+  return (
+    <div>
+    <Routes>
+      <Route path="/" element={<Navbar/>}>
+          {/* <Route path="/Home" element={<Home/>} /> */}
+          <Route path="/farmfinder" element={<farmfinder/>} />
+      </Route>
+    </Routes>
+  </div>
+  );
+}
