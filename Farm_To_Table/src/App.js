@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate, Switch } from "react-router-dom";
 import FarmerInfo from "./components/FarmerInfo/FarmerInfo";
-import './App.css';
+import Recipe from "./components/Recipe";
 
 // import component pages
 // import Home from "./components/Home";
@@ -11,12 +11,15 @@ import Navbar from "./components/NavBar";
 export default function App() {
   return (
     <div>
-    <Routes>
-      <Route path="/" element={<Navbar/>}>
-          {/* <Route path="/Home" element={<Home/>} /> */}
-          <Route path="/farmfinder" element={<farmfinder/>} />
-      </Route>
-    </Routes>
+      <header>
+        <Navbar/>
+      </header>
+      <Routes>
+        <Route path="/" element={<Recipe />} />
+      </Routes>
+      <footer>
+
+      </footer>
   </div>
   );
 }

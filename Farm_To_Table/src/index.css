@@ -1,78 +1,233 @@
+.App {
+	text-align: center;
+  }
+  
+  .App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+  }
+  
 :root {
 	--background-color: white;
 	--primary-color: #e8f1d4;
 	--secondary-color: #fff;
-
-	/* Define other variables */
-}
-
-html {
+  }
+  
+  html {
 	background-color: var(--background-color);
-}
-
-body {
+  }
+  
+  body {
 	margin: 0;
 	min-height: 100vh;
 	position: relative;
 	background-color: var(--background-color);
-}
-
-/* NavBar Styles */
-
-.nav {
+  }
+  
+  .nav {
 	background-color: #D1E3C5;
-  color: black;
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 0 1rem;
-}
-
-.nav ul {
-  list-style: none;
-  display: flex;
-}
-
-.nav-item {
-  padding: 0px 15px;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	padding: 0 1rem;
+  }
+  
+  .nav ul {
+	list-style: none;
+	display: flex;
+  }
+  
+  .nav-item {
+	padding: 0px 15px;
 	font-size: 1.5em;
-}
-
-.nav .nav-item .nav-link {
-  color: var(--secondary-color);
-  text-decoration: none;
-}
-
-.nav-bar .nav-item .nav-link.active {
-	/* Add your active link styles here */
+  }
+  
+  .nav .nav-item .nav-link {
+	color: var(--secondary-color);
+	text-decoration: none;
+  }
+  
+  .nav-bar .nav-item .nav-link.active {
 	color: #e8f1d4;
-}
-
-.logo-img {
+  }
+  
+  .logo-img {
 	width: 130px;
-	/* Adjust the size as needed */
 	height: auto;
-	/* Maintain aspect ratio */
-}
-
-.nav-link:hover::after {
+  }
+  
+  .nav-link:hover::after {
 	content: "";
 	display: block;
 	margin: auto;
 	height: 2px;
-	/* Height of the line */
 	width: 100%;
-	/* Width of the line */
 	background-color: var(--primary-color);
-	/* Color of the line */
-}
-
-.nav-bar .nav-item .nav-link:hover {
+  }
+  
+  .nav-bar .nav-item .nav-link:hover {
 	color: var(--secondary-color);
-}
-
-.badge {
-    display: flex;
-    background-color: aliceblue;
-    margin: 1em;
-    max-width: 20vw;
+  }
+  
+  .badge {
+	display: flex;
+	background-color: aliceblue;
+	margin: 1em;
+	max-width: 20vw;
+  }
+  
+  /* -------------------------------------------- Recipe -----------*/
+  .recipe-container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 1rem;
+  }
+  
+  .featured-dish .carousel {
+	width: 100%;
+	height: 200px;
+	background-color: #f3f3f3;
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .filter-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
+  }
+  
+  .category-filter {
+	display: flex;
+	gap: 0.5rem;
+	flex-grow: 1;
+  }
+  
+  .category-button {
+	background-color: #e8f1d4;
+	border: none;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .category-button.active,
+  .category-button:hover {
+	background-color: #c4d7a8;
+  }
+  
+  .search-and-post {
+	display: flex;
+	align-items: center;
+  }
+  
+  .search-container {
+	display: flex;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	overflow: hidden;
+  }
+  
+  .search-input {
+	flex-grow: 1;
+	border: none;
+	padding: 0.5rem;
+  }
+  
+  .search-btn {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	font-size: 1rem;
+  }
+  
+  .search-input:focus {
+	outline: none;
+  }
+  
+  .search-btn:hover {
+	background-color: #0056b3;
+  }
+  
+  .post-button {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	margin-left: 0.5rem;
+	cursor: pointer;
+  }
+  
+  .recipe-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1rem;
+  }
+  
+  .recipe-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	overflow: hidden;
+  }
+  
+  .recipe-image {
+	background-color: #f3f3f3;
+	height: 150px;
+  }
+  
+  .recipe-info {
+	padding: 0.5rem;
+  }
+  
+  .recipe-title, .user-name, .recipe-likes {
+	font-size: 1rem;
+	color: #333;
+  }
+  
+  .user-info {
+	display: flex;
+	align-items: center;
+  }
+  
+  .avatar {
+	width: 30px;
+	height: 30px;
+	background-color: #ddd;
+	border-radius: 50%;
+	margin-right: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+	.filter-section {
+	  flex-direction: column;
+	}
+  
+	.search-and-post {
+	  width: 100%;
+	  margin-top: 0.5rem;
+	}
+  
+	.search-bar {
+	  width: calc(100% - 50px);
+	}
+  
+	.search-button {
+	  width: 50px;
+	}
+  }
+  
+  /* --------------------------------------------- Recipe ------*/
