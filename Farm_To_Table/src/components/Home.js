@@ -30,6 +30,9 @@ export default function HomePage(props) {
         <div className = "item-1"> Item 1 </div>
         <div className = "item-2"> Item 2 </div>
       </div>
+      <header>
+        <h1 className="second-header"> IN SEASON </h1>
+      </header>
     </body>
   )
 }
