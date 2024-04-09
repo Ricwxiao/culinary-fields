@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 
 // robert's line
 // we want to keep this line of code
@@ -17,15 +18,23 @@ import React from 'react';
 
 export default function HomePage(props) {
   return (
-    <div className="HomePage">
-      <header className="first-title">
-        <h1 className="first-header"> Spotlight </h1>
-      </header>
-      <img src="/images/spotlight.jpg" alt="farmer spotlight"  width="1280px" height="720px"> </img>
-    </div>
-  )
+    <body>
+      <div className="HomePage">
+        <header className="first-title">
+          <h1 className="first-header"> Spotlight </h1>
+        </header>
+        <img src="../img/spotlight.png" alt="farmer spotlight"  width="1280px" height="720px"/>
+      </div>
 
+      <div class="container">
+        <div className = "item-1"> Item 1 </div>
+        <div className = "item-2"> Item 2 </div>
+      </div>
+    </body>
+  )
 }
+
+
 
 /*
 export default function HomePage(props) {
