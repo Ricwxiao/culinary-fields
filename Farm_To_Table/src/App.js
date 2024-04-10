@@ -3,8 +3,11 @@ import { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate, Switch, useRoutes } from "react-router-dom";
 import './App.css';
 import Home from "./components/Home";
+import Navbar from './components/NavBar'
 
-import Navbar from './NavBar';
+// import component pages
+// import Home from "./components/Home";
+// import Navbar from "./components/NavBar";
 
 export default function App() {
   return (
@@ -15,9 +18,14 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
       </Routes>
+      <footer>
+      </footer>
   </div>
   );
 }
+
+// {/* <Route path="/" element={<Recipe />} />
+//       </Routes> */}
 
 // const AppPath = () => {
 //   let routes = useRoutes([

@@ -1,7 +1,8 @@
 import React from 'react';
 import '../index.css';
-import spotlightImg from "../components/img/spotlight.png"
-import Navbar from './NavBar';
+import spotlightImg from "../components/img/spotlight.png";
+import Navbar from '../components/NavBar';
+import ImageCarousel from './ImageCarousel';
 
 // robert's line
 // we want to keep this line of code
@@ -17,7 +18,6 @@ import Navbar from './NavBar';
 */
 
 
-
 export default function HomePage(props) {
   return (
     <body>
@@ -25,7 +25,7 @@ export default function HomePage(props) {
         <header className="first-title">
           <h1 className="first-header"> Spotlight </h1>
         </header>
-        <img src={spotlightImg} alt="farmer spotlight" width="500px" height="400px"/>
+        <ImageCarousel height={500} width={700} />
 
 
       <header>
