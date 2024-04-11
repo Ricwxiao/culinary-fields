@@ -1,17 +1,16 @@
-
 import spotlightImg from "../components/img/spotlight.png";
 
 function ImageCarousel({ height, width }) {
   return (
-    <div style={{ display: "flex", flexDirection: "row", border: "2px solid", height: height, width: width }}>
-      <div style={{ border: "2px solid green", width: '50%' }}>
+    <div className="image-carousel-container" style={{ height: height, width: width }}>
+      <div className="left-panel">
         <img src={spotlightImg} alt="farmer spotlight" width="500px" height="400px"/>
       </div>
-      <div style={{ display: "flex", flexDirection: "column", border: "2px solid blue", width: '50%' }}>
-        <div style={{ border: "2px solid yellow", height: '50%' }}>
+      <div className="right-panel">
+        <div className="top-image">
           <img src={spotlightImg} alt="farmer spotlight" width="100%" height="100%"/>
         </div>
-        <div style={{ border: "2px solid red", height: '50%' }}>
+        <div className="bottom-image">
           <img src={spotlightImg} alt="farmer spotlight" width="100%" height="100%"/>
         </div>
       </div>
@@ -19,4 +18,4 @@ function ImageCarousel({ height, width }) {
   )
 }
 
-export default ImageCarousel
+export default ImageCarousel;

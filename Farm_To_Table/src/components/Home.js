@@ -3,6 +3,7 @@ import '../index.css';
 import spotlightImg from "../components/img/spotlight.png";
 import Navbar from '../components/NavBar';
 import ImageCarousel from './ImageCarousel';
+import EventCarousel from './EventCarousel';
 
 // robert's line
 // we want to keep this line of code
@@ -25,7 +26,7 @@ export default function HomePage(props) {
         <header className="first-title">
           <h1 className="first-header"> Spotlight </h1>
         </header>
-        <ImageCarousel height={500} width={700} />
+        <ImageCarousel height={500} width={800} />
 
 
       <header>
@@ -33,23 +34,27 @@ export default function HomePage(props) {
         <h2 className="second-sub-header"> Produces </h2>
       </header>
       <div class="container">
-        <div className = "item-1"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> Item 1 </div>
-        <div className = "item-2"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> Item 2 </div>
-        <div className = "item-3"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> Item 3 </div>
-        <div className = "item-4"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> Item 4 </div>
-        <div className = "item-5"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> Item 5 </div>
+        <div className = "item-1"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> </div>
+        <div className = "item-2"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> </div>
+        <div className = "item-3"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> </div>
+        <div className = "item-4"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> </div>
+        <div className = "item-5"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> </div>
       </div>
         <h2 className="second-sub-header"> Receipes </h2>
         <div class="container">
-        <div className = "item-1"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> Item 1 </div>
-        <div className = "item-2"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> Item 2 </div>
-        <div className = "item-3"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> Item 3 </div>
-        <div className = "item-4"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> Item 4 </div>
-        <div className = "item-5"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> Item 5 </div>
+        <div className = "item-1"> <img src={spotlightImg} alt="farmer spotlight" width="300px" height="100px"/> </div>
+        <div className = "item-2"> <img src={spotlightImg} alt="farmer spotlight" width="300px" height="100px"/> </div>
+        <div className = "item-3"> <img src={spotlightImg} alt="farmer spotlight" width="300px" height="100px"/> </div>
       </div>
       <header>
         <h1 className="third-header"> EVENTS </h1>
         <h2 className="second-sub-header"> This Week </h2>
+        <EventCarousel height={500} width={800}/>
+        {/* <div class="container-event">
+          <div className = "item-1"> <img src={spotlightImg} alt="farmer spotlight" width="100px" height="70px"/> </div>
+        </div>
+        <div class="event-border"> Event Description
+        </div> */}
       </header>
       </div>
     </body>
