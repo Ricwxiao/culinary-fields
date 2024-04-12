@@ -1,5 +1,6 @@
 import React from "react";
 import Badge from "./Badge";
+import { RecipeCard } from "../Recipe";
 import FARMS from "../../data/farms.json";
 
 
@@ -9,12 +10,10 @@ export default function FarmerInfo(props) {
     function findFarmByName(farms, name) {
         return farms.find(farm => farm.name === name);
     }
-
-
     let farm = findFarmByName(FARMS, farmName);
 
-
     return (
+
         <div>
             <h1>{farmName}</h1>
             <img src={`/imgs/tian_tian_farm.png`} alt={"Images of " + farmName}></img>
@@ -74,6 +73,10 @@ export default function FarmerInfo(props) {
                 <p>
                     Steven is a second-generation Taiwanese American whose fondest food memories revolve around Sunday morning dim sum. Also a former newspaper reporter, he decided to switch careers after discovering a new kind of joy during misty morning harvests. He lived in Seattle from 2017 to 2018, when he served as news editor at The Stranger.
                 </p>
+            </div>
+            <div className="starringContainer">
+                <h2>Starring Recipes</h2>
+                <RecipeCard name={'Stir Fried Bittermelon'} user= {'Goya Farm (Sara)'} likes= {'1k+'} />
             </div>
         </div>
     );

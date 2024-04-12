@@ -15,7 +15,6 @@ export default function App() {
         <Navbar/>
       </header>
       <Routes>
-        <Route path="/recipes" element={<Recipe />} />
         <Route path="/" element={<FarmerInfo />} />
       </Routes>
       <footer>
