@@ -6,10 +6,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .container div {
-  margin: 0 20px;
+  background-image: url('../src/components/img/bittermelon.jpg');
+  min-width: 200px;
+  min-height: 200px;
 }
 
 .event-border {
@@ -20,6 +23,16 @@
   display: flex;
   flex-direction: row;
   justify-content:left;
+}
+
+.contain div {
+  border: 0px solid white;
+  border-radius: 0px;
+  background-color: white;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 
 .item-1 {
@@ -74,6 +87,7 @@
 
 img {
   border-radius: 8px;
+  flex: 1 0 200px;
 }
 
 h1 {
@@ -172,4 +186,16 @@ h2 {
 .bottom-image {
   border: 0px solid white;
   height: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .container img {
+    flex-basis: calc(50% - 10px); /* Adjust the percentage and margins as needed */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container img {
+    flex-basis: calc(100% - 10px); /* Adjust the margins as needed */
+  }
 }

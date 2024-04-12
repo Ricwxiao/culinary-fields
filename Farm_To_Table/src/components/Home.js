@@ -42,14 +42,19 @@ export default function HomePage(props) {
         <h2 className="second-sub-header"> Produces </h2>
       </header>
       <div class="container">
-        <div className = "item-1"> <img src={bittermelonImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        {/* <div className = "item-1"> <img src={bittermelonImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
         <div className = "item-2"> <img src={eggplantImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
         <div className = "item-3"> <img src={greenonionImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
         <div className = "item-4"> <img src={bokchoyImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
-        <div className = "item-5"> <img src={califlowerImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
+        <div className = "item-5"> <img src={califlowerImg} alt="farmer spotlight" width="164px" height="184px"/> </div> */}
       </div>
         <h2 className="second-sub-header"> Receipes </h2>
-        <div class="container">
+      <div class="container">
         <div className = "item-1"> <img src={stirfryImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
         <div className = "item-2"> <img src={soysaucechoysumImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
         <div className = "item-3"> <img src={kimchiImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
