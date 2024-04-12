@@ -19,7 +19,7 @@ export default function App() {
         <Route path="/" element={<Recipe />} />
       </Routes>
       <footer>
-
+      <Footer/>
       </footer>
   </div>
   );
