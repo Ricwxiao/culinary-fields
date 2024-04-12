@@ -1,4 +1,5 @@
 import React from 'react';
+import FarmerInfo from './FarmerInfo/FarmerInfo';
 
 // robert's line
 // we want to keep this line of code
@@ -19,6 +20,7 @@ export default function Home(props) {
       <header className="page-title">
         <h1 className="page-header"> Spotlight </h1>
       </header>
+      <FarmerInfo farmName=""/>
     </div>
   )
 }
