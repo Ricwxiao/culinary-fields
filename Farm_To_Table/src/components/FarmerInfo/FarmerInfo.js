@@ -1,32 +1,25 @@
 import React from "react";
 import Badge from "./Badge";
-import FARMS from "../../data/farms.json"
-import farmImg from "../../imgs/tian_tian_farm.png"
 import { RecipeCard } from "../Recipe";
+import FARMS from "../../data/farms.json";
 
 
 export default function FarmerInfo(props) {
+    let farmName = props.farmName;
 
-    let farmName = props.farmName
-    
     function findFarmByName(farms, name) {
         return farms.find(farm => farm.name === name);
     }
+    let farm = findFarmByName(FARMS, farmName);
 
-    let farm = findFarmByName(FARMS, farmName)
+    return (
 
-    const recipeArr = [
-        { id: 1, name: 'Stir Fried Bittermelon', user: 'Goya Farm (Sara)', likes: '1k+', category: 'Chinese' },
-        { id: 2, name: 'Kimchi Stew', user: 'Kimchi King', likes: '3k+', category: 'Korean' }
-    ]
-
-    return(
         <div>
             <h1>{farmName}</h1>
-            {/* Could replace this by the Gallery module */}
-            <img src="" alt={"Images of " + farmName}></img>
+            <img src={`/imgs/tian_tian_farm.png`} alt={"Images of " + farmName}></img>
             <Badge 
-                img={farmImg}
+                img={`/imgs/tian_tian_farm.png`} 
+
                 name={farmName}
                 address={"24026 Wax Orchard Rd SW, Vashon, WA 98070"}
             />
@@ -37,34 +30,34 @@ export default function FarmerInfo(props) {
                 </div>
                 <div className="produceCloset">
                     <div className="produceGrown">
-                        <img src="" alt="cabbage icon" />
+                        <img src="/imgs/cabbage_icon.png" alt="cabbage icon" />
                         <p>Nappa Cabbage</p>
                     </div>
                     <div className="produceGrown">
-                        <img src="" alt="bittermelon icon" />
+                        <img src="/imgs/bittermelon_icon.png" alt="bittermelon icon" />
                         <p>Bitter Melon</p>
                     </div>
                     <div className="produceGrown">
-                        <img src="" alt="bok choy icon" />
+                        <img src="/imgs/bok_choy_icon.png" alt="bok choy icon" />
                         <p>Bok Choy</p>
                     </div>
                     <div className="produceGrown">
-                        <img src="" alt="red onion icon" />
+                        <img src="/imgs/red_onion_icon.png" alt="red onion icon" />
                         <p>Red Onion</p>
                     </div>
                 </div>
             </div>
             <div className="socialsContainer">
                 <div className="socialLink">
-                    <img src="" alt="Instagram Icon" />
+                    <img src="/imgs/instagram_icon.png" alt="Instagram Icon" />
                     <p>@tiantian.farm</p>
                 </div>
                 <div className="socialLink">
-                    <img src="" alt="Facebook Icon" />
+                    <img src="/imgs/facebook_icon.png" alt="Facebook Icon" />
                     <p>@Tian Tian Farm</p>
                 </div>
                 <div className="socialLink">
-                    <img src="" alt="Webpage Icon" />
+                    <img src="/imgs/webpage_icon.png" alt="Webpage Icon" />
                     <p>tiantianfarmseattle.com</p>
                 </div>
                 <button>Sign Up for their CSA</button>
@@ -86,5 +79,5 @@ export default function FarmerInfo(props) {
                 <RecipeCard name={'Stir Fried Bittermelon'} user= {'Goya Farm (Sara)'} likes= {'1k+'} />
             </div>
         </div>
-    )
+    );
 }
