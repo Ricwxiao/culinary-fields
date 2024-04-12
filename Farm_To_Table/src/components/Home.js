@@ -4,6 +4,14 @@ import spotlightImg from "../components/img/spotlight.png";
 import Navbar from '../components/NavBar';
 import ImageCarousel from './ImageCarousel';
 import EventCarousel from './EventCarousel';
+import bittermelonImg from "../components/img/bittermelon.jpg";
+import eggplantImg from "../components/img/eggplant.jpg";
+import greenonionImg from "../components/img/greenonion.jpg";
+import bokchoyImg from "../components/img/bokchoy.jpg";
+import califlowerImg from "../components/img/califlower.jpg";
+import kimchiImg from "../components/img/kimchi.jpg";
+import stirfryImg from "../components/img/stirfry.jpg";
+import soysaucechoysumImg from "../components/img/soysaucechoysum.jpg";
 
 // robert's line
 // we want to keep this line of code
@@ -34,17 +42,17 @@ export default function HomePage(props) {
         <h2 className="second-sub-header"> Produces </h2>
       </header>
       <div class="container">
-        <div className = "item-1"> <img src={spotlightImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
-        <div className = "item-2"> <img src={spotlightImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
-        <div className = "item-3"> <img src={spotlightImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
-        <div className = "item-4"> <img src={spotlightImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
-        <div className = "item-5"> <img src={spotlightImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
+        <div className = "item-1"> <img src={bittermelonImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
+        <div className = "item-2"> <img src={eggplantImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
+        <div className = "item-3"> <img src={greenonionImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
+        <div className = "item-4"> <img src={bokchoyImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
+        <div className = "item-5"> <img src={califlowerImg} alt="farmer spotlight" width="164px" height="184px"/> </div>
       </div>
         <h2 className="second-sub-header"> Receipes </h2>
         <div class="container">
-        <div className = "item-1"> <img src={spotlightImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
-        <div className = "item-2"> <img src={spotlightImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
-        <div className = "item-3"> <img src={spotlightImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
+        <div className = "item-1"> <img src={stirfryImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
+        <div className = "item-2"> <img src={soysaucechoysumImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
+        <div className = "item-3"> <img src={kimchiImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
       </div>
       <header>
         <h1 className="third-header"> EVENTS </h1>

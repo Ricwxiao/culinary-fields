@@ -1,4 +1,7 @@
 import spotlightImg from "../components/img/spotlight.png";
+import caphillImg from "../components/img/caphill.jpg";
+import bokchoyreceipeImg from "../components/img/bokchoyreceipe.jpg";
+
 
 function ImageCarousel({ height, width }) {
   return (
@@ -8,10 +11,10 @@ function ImageCarousel({ height, width }) {
       </div>
       <div className="right-panel">
         <div className="top-image">
-          <img src={spotlightImg} alt="farmer spotlight" width="100%" height="100%"/>
+          <img src={bokchoyreceipeImg} alt="farmer spotlight" width="100%" height="100%"/>
         </div>
         <div className="bottom-image">
-          <img src={spotlightImg} alt="farmer spotlight" width="100%" height="100%"/>
+          <img src={caphillImg} alt="farmer spotlight" width="100%" height="100%"/>
         </div>
       </div>
     </div>
