@@ -4,7 +4,7 @@ function ImageCarousel({ height, width }) {
   return (
     <div className="image-carousel-container" style={{ height: height, width: width }}>
       <div className="left-panel">
-        <img src={spotlightImg} alt="farmer spotlight" width="500px" height="400px"/>
+        <img src={spotlightImg} alt="farmer spotlight" width="500px" height="500px"/>
       </div>
       <div className="right-panel">
         <div className="top-image">

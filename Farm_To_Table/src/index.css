@@ -23,53 +23,53 @@
 }
 
 .item-1 {
-  border: 1px solid black;
-  border-radius: 25px;
-  background-color: lightblue;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 30px;
+  border: 0px solid white;
+  border-radius: 0px;
+  background-color: white;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 
 .item-2 {
-  border: 1px solid black;
-  border-radius: 25px;
-  background-color: lightblue;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 30px;
+  border: 0px solid white;
+  border-radius: 0px;
+  background-color: white;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 
 .item-3 {
-  border: 1px solid black;
-  border-radius: 25px;
-  background-color: lightblue;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 30px;
+  border: 0px solid white;
+  border-radius: 0px;
+  background-color: white;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 
 .item-4 {
-  border: 1px solid black;
-  border-radius: 25px;
-  background-color: lightblue;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 30px;
+  border: 0px solid white;
+  border-radius: 0px;
+  background-color: white;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 
 .item-5 {
-  border: 1px solid black;
-  border-radius: 25px;
-  background-color: lightblue;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 30px;
+  border: 0px solid white;
+  border-radius: 0px;
+  background-color: white;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 
 img {
@@ -95,7 +95,7 @@ h2 {
 }
 
 .event-info-container {
-  border: 2px solid;
+  border: 2px solid white;
   display: flex;
   padding: .25rem;
   justify-content: space-evenly;
@@ -105,8 +105,13 @@ h2 {
 .event-carousel-container {
   display: flex;
   flex-direction: row;
-  border: 2px solid;
+  border: 2px solid white;
   height: 300px;
+  margin: auto;
+}
+
+.description p {
+  margin: 20px;
 }
 
 /* .event-info-left {
@@ -128,43 +133,43 @@ h2 {
 } */
 
 .image-container {
-  border: 2px solid green;
+  border: 2px solid white;
 }
 
 .description-container {
   display: flex;
   flex-direction: row;
-  border: 2px solid green;
+  border: 0px solid white;
 }
 
 .description {
-  border: 2px solid green;
+  border: 0px solid white;
 }
 
 .image-carousel-container {
   display: flex;
   flex-direction: row;
-  border: 2px solid;
+  border: 2px solid white;
 }
 
 .left-panel {
-  border: 2px solid green;
+  border: 0px solid white;
   width: 80%;
 }
 
 .right-panel {
   display: flex;
   flex-direction: column;
-  border: 2px solid green;
+  border: 0px solid white;
   width: 50%;
 }
 
 .top-image {
-  border: 2px solid green;
+  border: 2px solid white;
   height: 80%;
 }
 
 .bottom-image {
-  border: 2px solid green;
+  border: 0px solid white;
   height: 80%;
 }
