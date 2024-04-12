@@ -1,10 +1,13 @@
+import React from 'react';
+
 
 function Footer() {
     return(
 
         
         <div class="footer">
-            <p>Footer</p>
+            <img src={ischool} alt="ischool image"/>
+
         </div>
 
     )
