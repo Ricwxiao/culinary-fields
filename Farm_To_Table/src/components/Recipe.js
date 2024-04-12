@@ -1,5 +1,21 @@
 import React, { useState } from "react";
 
+export function RecipeCard({ name, user, likes }) {
+  return (
+    <div className="recipe-card">
+      <div className="recipe-image"></div>
+      <div className="recipe-info">
+        <h3 className="recipe-title">{name}</h3>
+        <div className="user-info">
+          <div className="avatar"></div>
+          <p className="user-name">{user}</p>
+        </div>
+        <p className="recipe-likes">{likes}</p>
+      </div>
+    </div>
+  );
+};
+
 function Recipe() {
   const categories = ['All', 'Chinese', 'Japanese', 'Korean', 'Thai', 'Other'];
   const [activeFilter, setActiveFilter] = useState('All');
@@ -29,22 +45,6 @@ function Recipe() {
 
   const handleSearch = () => {
     setFilteredRecipes(recipes.filter(recipe => recipe.name.toLowerCase().includes(searchQuery.toLowerCase())));
-  };
-
-  const RecipeCard = ({ name, user, likes }) => {
-    return (
-      <div className="recipe-card">
-        <div className="recipe-image"></div>
-        <div className="recipe-info">
-          <h3 className="recipe-title">{name}</h3>
-          <div className="user-info">
-            <div className="avatar"></div>
-            <p className="user-name">{user}</p>
-          </div>
-          <p className="recipe-likes">{likes}</p>
-        </div>
-      </div>
-    );
   };
 
   return (
