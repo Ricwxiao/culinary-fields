@@ -6,7 +6,8 @@ function Navbar() {
     <nav className="nav">
       <a href="/" className="site-title">Pacific Roots</a>
       <ul>
-        <img src="images/home_icon.png"></img>
+        {/* <img src={ require("./images/home_icon.png")}/>  */}
+        {/* example picture code, logo */}
         <li className='nav-item'>
           <NavLink to="/" className="nav-link">
             Home
