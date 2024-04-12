@@ -2,6 +2,7 @@ import React from "react";
 import Badge from "./Badge";
 import FARMS from "../../data/farms.json";
 
+
 export default function FarmerInfo(props) {
     let farmName = props.farmName;
 
@@ -9,7 +10,9 @@ export default function FarmerInfo(props) {
         return farms.find(farm => farm.name === name);
     }
 
+
     let farm = findFarmByName(FARMS, farmName);
+
 
     return (
         <div>
@@ -17,6 +20,7 @@ export default function FarmerInfo(props) {
             <img src={`/imgs/tian_tian_farm.png`} alt={"Images of " + farmName}></img>
             <Badge 
                 img={`/imgs/tian_tian_farm.png`} 
+
                 name={farmName}
                 address={"24026 Wax Orchard Rd SW, Vashon, WA 98070"}
             />
