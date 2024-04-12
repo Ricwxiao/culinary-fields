@@ -3,6 +3,7 @@ import { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate, Switch } from "react-router-dom";
 import FarmerInfo from "./components/FarmerInfo/FarmerInfo";
 import Recipe from "./components/Recipe";
+import Footer from "./components/Footer";
 
 // import component pages
 // import Home from "./components/Home";
@@ -18,7 +19,7 @@ export default function App() {
         <Route path="/" element={<Recipe />} />
       </Routes>
       <footer>
-
+      <Footer/>
       </footer>
   </div>
   );
