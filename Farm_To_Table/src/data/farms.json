@@ -1,0 +1,52 @@
+[
+  {
+    "img": "../imgs/tian_tian_farm.png",
+    "name": "Tian Tian Farm",
+    "address": "24026 Wax Orchard Rd SW, Vashon, WA 98070"
+  },
+  {
+    "img": "",
+    "name": "Red Dog Farm",
+    "address": "6606 NE Old Kingston Rd, Bainbridge Island, WA 98110"
+  },
+  {
+    "img": "",
+    "name": "Serendipity Farm",
+    "address": "19204 SE Green Valley Rd, Auburn, WA 98092"
+  },
+  {
+    "img": "",
+    "name": "Bellewood Acres",
+    "address": "6140 Guide Meridian, Lynden, WA 98264"
+  },
+  {
+    "img": "",
+    "name": "Remlinger Farms",
+    "address": "32610 NE 32nd St, Carnation, WA 98014"
+  },
+  {
+    "img": "",
+    "name": "Lattin's Country Cider Mill & Farm",
+    "address": "9402 Rich Rd SE, Olympia, WA 98501"
+  },
+  {
+    "img": "",
+    "name": "Carnation Farms",
+    "address": "28901 NE Carnation Farm Rd, Carnation, WA 98014"
+  },
+  {
+    "img": "",
+    "name": "Bainbridge Island Farms",
+    "address": "9415 Miller Rd NE, Bainbridge Island, WA 98110"
+  },
+  {
+    "img": "",
+    "name": "Fox Hollow Farm",
+    "address": "12031 Issaquah Hobart Rd SE, Issaquah, WA 98027"
+  },
+  {
+    "img": "",
+    "name": "Herbfarm",
+    "address": "14590 NE 145th St, Woodinville, WA 98072"
+  }
+]
