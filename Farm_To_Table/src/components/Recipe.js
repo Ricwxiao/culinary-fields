@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 
-export function RecipeCard({ name, user, likes }) {
-  return (
-    <div className="recipe-card">
-      <div className="recipe-image"></div>
-      <div className="recipe-info">
-        <h3 className="recipe-title">{name}</h3>
-        <div className="user-info">
-          <div className="avatar"></div>
-          <p className="user-name">{user}</p>
+export const RecipeCard = ({ name, user, likes, image }) => {
+    const imageUrl = `/imgs/${image}`; 
+    return (
+      <div className="recipe-card">
+        <div className="recipe-image">
+          <img src={imageUrl} alt={name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </div>
-        <p className="recipe-likes">{likes}</p>
+        <div className="recipe-info">
+          <h3 className="recipe-title">{name}</h3>
+          <div className="user-info">
+            <p className="user-name">{user}</p>
+            <p className="recipe-likes">{likes}</p>
+          </div>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
 
 function Recipe() {
   const categories = ['All', 'Chinese', 'Japanese', 'Korean', 'Thai', 'Other'];

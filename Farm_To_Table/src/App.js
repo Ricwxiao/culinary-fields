@@ -17,6 +17,7 @@ export default function App() {
       </header>
       <Routes>
         <Route path="/" element={<FarmerInfo />} />
+        <Route path='/recipes' element={<Recipe />} />
       </Routes>
       <footer>
       <Footer/>
