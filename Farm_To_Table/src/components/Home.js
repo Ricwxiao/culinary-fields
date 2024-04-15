@@ -12,6 +12,8 @@ import califlowerImg from "../components/img/califlower.jpg";
 import kimchiImg from "../components/img/kimchi.jpg";
 import stirfryImg from "../components/img/stirfry.jpg";
 import soysaucechoysumImg from "../components/img/soysaucechoysum.jpg";
+import ImageBox from './ImageBox';
+
 
 // robert's line
 // we want to keep this line of code
@@ -25,7 +27,6 @@ import soysaucechoysumImg from "../components/img/soysaucechoysum.jpg";
  - Has name of vegetable on image
  - Drop Shadow Effect
 */
-
 
 export default function HomePage(props) {
   return (
@@ -50,9 +51,17 @@ export default function HomePage(props) {
       </div>
         <h2 className="second-sub-header"> Receipes </h2>
       <div class="container">
-        <div className = "item-1"> <img src={stirfryImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
-        <div className = "item-2"> <img src={soysaucechoysumImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
-        <div className = "item-3"> <img src={kimchiImg} alt="farmer spotlight" width="300px" height="300px"/> </div>
+        <div className = "item-1">
+          <ImageBox src={stirfryImg} alt="farmer spotlight" width="400px" height="400px" text="Stir Fry" />
+        </div>
+        <div className = "item-2">
+          {/* <img src={soysaucechoysumImg} alt="farmer spotlight" width="400px" height="400px"/> </div> */}
+          <ImageBox src={soysaucechoysumImg} alt="farmer spotlight" width="400px" height="400px" text="Soy Sauce Choysum" />
+        </div>
+        <div className = "item-3">
+          {/* <img src={kimchiImg} alt="farmer spotlight" width="400px" height="400px"/> </div> */}
+          <ImageBox src={kimchiImg} alt="farmer spotlight" width="400px" height="400px" text="Kimchi" />
+        </div>
       </div>
       <header>
         <h1 className="third-header"> EVENTS </h1>
@@ -79,6 +88,7 @@ export default function HomePage(props) {
         <h1 className="first-header"> Spotlight </h1>
         <a href = "link address"> <img src=""></img></a>
       </header>
+<<<<<<< HEAD
       <header className="second-title">
         <h1 className="second-header"> In Season </h1>
       </header>
@@ -93,7 +103,6 @@ export default function HomePage(props) {
             <Link id="" to='/education' className="btn btn-info btn-lg mb-5 nav-link">　Events </Link>
         </div>
       </main>
-    </div>
   )
 
 }

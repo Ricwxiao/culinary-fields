@@ -3,7 +3,9 @@ import { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate, Switch, useRoutes } from "react-router-dom";
 import './App.css';
 import Home from "./components/Home";
-import Navbar from './components/NavBar'
+import Navbar from './components/NavBar';
+import Receipe from './components/Recipe';
+import HomePage from './components/Home';
 
 // import component pages
 // import Home from "./components/Home";
@@ -16,7 +18,7 @@ export default function App() {
         <Navbar/>
       </header>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<HomePage/>}/>
       </Routes>
       <footer>
       </footer>
