@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Navbar from './components/NavBar';
 import Receipe from './components/Recipe';
 import HomePage from './components/Home';
+import Recipe from './components/Recipe';
 
 // import component pages
 // import Home from "./components/Home";
