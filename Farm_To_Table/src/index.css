@@ -113,6 +113,14 @@ h2 {
   padding: .25rem;
   justify-content: space-evenly;
   align-items: flex-start;
+  position: relative;
+}
+
+@media (max-width: 645px) { /*anything under 500 will not be the font size*/
+  .event-paragraph
+   {
+      font-size: 10px; /* Adjust spacing for smaller screens */
+  }
 }
 
 .event-carousel-container {
@@ -121,6 +129,7 @@ h2 {
   border: 2px solid white;
   height: 300px;
   margin: auto;
+  padding-bottom: 10%;
 }
 
 .description p {
@@ -459,3 +468,17 @@ h2 {
   }
 
   /* --------------------------------------------- Recipe ------*/
+
+  .footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	background-color: #c4d7a8;
+	color: white;
+	text-align: center;
+  }
+
+  /* --------------------------------------------- Footer ------*/
+

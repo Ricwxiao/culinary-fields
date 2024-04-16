@@ -7,6 +7,8 @@ import Navbar from './components/NavBar';
 import Receipe from './components/Recipe';
 import HomePage from './components/Home';
 import Recipe from './components/Recipe';
+import FarmerInfo from "./components/FarmerInfo/FarmerInfo";
+import Footer from "./components/Footer";
 
 // import component pages
 // import Home from "./components/Home";
@@ -19,9 +21,11 @@ export default function App() {
         <Navbar/>
       </header>
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
+        <Route path="/" element={<HomePage />} />
+        <Route path='/recipes' element={<Recipe />} />
       </Routes>
       <footer>
+      <Footer/>
       </footer>
   </div>
   );

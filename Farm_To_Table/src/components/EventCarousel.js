@@ -14,7 +14,7 @@ function EventCarousel({ height, width }) {
             <div>Time</div>
             <div>Location</div>
           </div>
-          <p> Chef Pascal Chureau, chef/owner of Field & Vine Events,
+          <p className="event-paragraph">  Chef Pascal Chureau, chef/owner of Field & Vine Events,
             has teamed up with some prominent wineries—Domaine Serene,
             Stoller Family Estate, etc.—for a dinner series that runs through
             December throughout...</p>

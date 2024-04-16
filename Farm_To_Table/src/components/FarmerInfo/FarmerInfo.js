@@ -74,9 +74,9 @@ export default function FarmerInfo(props) {
                     Steven is a second-generation Taiwanese American whose fondest food memories revolve around Sunday morning dim sum. Also a former newspaper reporter, he decided to switch careers after discovering a new kind of joy during misty morning harvests. He lived in Seattle from 2017 to 2018, when he served as news editor at The Stranger.
                 </p>
             </div>
-            <div className="starringContainer">
+            <div className="starringContainer recipe-list">
                 <h2>Starring Recipes</h2>
-                <RecipeCard name={'Stir Fried Bittermelon'} user= {'Goya Farm (Sara)'} likes= {'1k+'} />
+                <RecipeCard name={'Stir Fried Bittermelon'} user= {'Goya Farm (Sara)'} likes= {'1k+'} image={'Stir_Fried_Bittermelon.png'}/>
             </div>
         </div>
     );
