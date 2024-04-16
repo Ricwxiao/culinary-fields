@@ -16,11 +16,11 @@ export default function App() {
         <Navbar/>
       </header>
       <Routes>
-        <Route path="/" element={<FarmerInfo />} />
+        <Route path="/farmfinder" element={<FarmerInfo />} />
         <Route path='/recipes' element={<Recipe />} />
       </Routes>
       <footer>
-      <Footer/>
+        <Footer/>
       </footer>
   </div>
   );

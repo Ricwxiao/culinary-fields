@@ -391,6 +391,11 @@
 	color: #fff;
 	padding: 1em;
   }
+
+  .farmInfo .starringContainer {
+	display: flex;
+	flex-direction: column;
+  }
   
   @media (max-width: 768px) {
 	.filter-section {
