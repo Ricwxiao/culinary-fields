@@ -48,6 +48,15 @@ body {
 	color: #e8f1d4;
 }
 
+.nav .site-title {
+	display: flex;
+	margin-block-start: 0.65em;
+
+	color: var(--secondary-color);
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
 .logo-img {
 	width: 130px;
 	/* Adjust the size as needed */
