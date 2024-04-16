@@ -7,6 +7,10 @@ import FARMS from "../../data/farms.json";
 export default function FarmerInfo(props) {
     let farmName = props.farmName;
 
+    if (!props.farmName) {
+        farmName = "Tian Tian Farm"
+    }
+
     function findFarmByName(farms, name) {
         return farms.find(farm => farm.name === name);
     }
@@ -14,51 +18,65 @@ export default function FarmerInfo(props) {
 
     return (
 
-        <div>
-            <h1>{farmName}</h1>
-            <img src={`/imgs/tian_tian_farm.png`} alt={"Images of " + farmName}></img>
-            <Badge 
-                img={`/imgs/tian_tian_farm.png`} 
+        <div className="farmInfo">
 
-                name={farmName}
-                address={"24026 Wax Orchard Rd SW, Vashon, WA 98070"}
-            />
-            <div className="growsContainer">
-                <div>
-                    <h3>Grows</h3>
-                    <p>Learn More</p>
-                </div>
-                <div className="produceCloset">
-                    <div className="produceGrown">
-                        <img src="/imgs/cabbage_icon.png" alt="cabbage icon" />
-                        <p>Nappa Cabbage</p>
-                    </div>
-                    <div className="produceGrown">
-                        <img src="/imgs/bittermelon_icon.png" alt="bittermelon icon" />
-                        <p>Bitter Melon</p>
-                    </div>
-                    <div className="produceGrown">
-                        <img src="/imgs/bok_choy_icon.png" alt="bok choy icon" />
-                        <p>Bok Choy</p>
-                    </div>
-                    <div className="produceGrown">
-                        <img src="/imgs/red_onion_icon.png" alt="red onion icon" />
-                        <p>Red Onion</p>
+            <h1>{farmName}</h1>
+
+            <div className="profileRow">
+                <img className="coverPic" src={`/imgs/tian_tian_farm_pic.jpg`} alt={"Images of " + farmName}></img>
+                <div className="badgeAndGrows">
+                    <Badge 
+                        img={`/imgs/tian_tian_farm.png`} 
+                        name={farmName}
+                        address={"24026 Wax Orchard Rd SW, Vashon, WA 98070"}
+                    />
+                    <div className="growsContainer">
+
+                        <div className="titleRow">
+                            <h3>Grows</h3>
+                            <p>Learn More</p>
+                        </div>
+
+                        <div className="produceCloset">
+
+                            <div className="produceRow">
+                                <div className="produceGrown">
+                                    <img src={`/imgs/produce_icons/nappa_cabbage.png`} alt="cabbage icon" />
+                                    <p>Nappa Cabbage</p>
+                                </div>
+                                <div className="produceGrown">
+                                    <img src={`/imgs/produce_icons/bitter_melon.png`} alt="bittermelon icon" />
+                                    <p>Bitter Melon</p>
+                                </div>
+                            </div>
+
+                            <div className="produceRow">
+                                <div className="produceGrown">
+                                    <img src={`/imgs/produce_icons/bok_choy.png`} />
+                                    <p>Bok Choy</p>
+                                </div>
+                                <div className="produceGrown">
+                                    <img src={`/imgs/produce_icons/red_onion.png`} />
+                                    <p>Red Onion</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div className="socialsContainer">
-                <div className="socialLink">
-                    <img src="/imgs/instagram_icon.png" alt="Instagram Icon" />
-                    <p>@tiantian.farm</p>
+                <div className="socialLink" id="igLink">
+                    <img src={`/imgs/social_icons/instagram_logo.svg`} alt="Instagram Icon" />
+                    <p><a href="https://www.instagram.com/tiantian.farm/">@tiantian.farm</a></p>
                 </div>
-                <div className="socialLink">
-                    <img src="/imgs/facebook_icon.png" alt="Facebook Icon" />
-                    <p>@Tian Tian Farm</p>
+                <div className="socialLink" id="fbLink">
+                    <img src={`/imgs/social_icons/facebook_logo.svg`} alt="Facebook Icon" />
+                    <p><a href="https://m.facebook.com/TianTianfarm">@Tian Tian Farm</a></p>
                 </div>
-                <div className="socialLink">
-                    <img src="/imgs/webpage_icon.png" alt="Webpage Icon" />
-                    <p>tiantianfarmseattle.com</p>
+                <div className="socialLink" id="webLink">
+                    <img src={`/imgs/social_icons/website_logo.svg`} alt="Webpage Icon" />
+                    <p><a href="https://www.tiantian.farm">www.tiantian.farm</a></p>
                 </div>
                 <button>Sign Up for their CSA</button>
             </div>
