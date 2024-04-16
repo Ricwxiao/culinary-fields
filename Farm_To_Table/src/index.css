@@ -14,7 +14,7 @@
   }
   
 :root {
-	--background-color: white;
+	--background-color: #FAFAFA;;
 	--primary-color: #e8f1d4;
 	--secondary-color: #fff;
   }
@@ -249,6 +249,138 @@
 	background-color: #ddd;
 	border-radius: 50%;
 	margin-right: 0.5rem;
+  }
+
+  .badge {
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: 4px 4px 10px 0px rgba(116, 116, 116, 0.25);
+	display: flex;
+	max-height: 10em;
+	min-width: 30vw;
+	align-items: center;
+	padding: .5em;
+  }
+
+  .badge img {
+	width: 40px;
+	height: 40px;
+	border-radius: 200px;
+	margin-left: .8em;
+  }
+
+  .badge .labels {
+	display: flex;
+	flex-direction: column;
+	margin: 0 1em;
+
+  }
+
+  .badge h1 {
+	font-size: 1em;
+	margin-bottom: 0;
+  }
+
+  .badge p {
+	font-size: .4em;
+	color: #5d5d5d;
+	margin-top: 0;
+  }
+
+  .farmInfo {
+	display: flex;
+	padding: 1em;
+	flex-direction: column;
+  }
+
+  .farmInfo .profileRow {
+	display: flex;
+	justify-content: space-between;
+  }
+
+  .farmInfo .coverPic {
+	object-fit: initial;
+	width: 60%;
+	height: 60%;
+  }
+
+  .farmInfo .growsContainer {
+	display: flex;
+	flex-direction: column;
+  }
+
+  .farmInfo .growsContainer .titleRow {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: baseline;
+	padding: 0 .5em;
+  }
+
+  .farmInfo .growsContainer h3 {
+	font-size: 1.5em;
+  }
+
+  .farmInfo .growsContainer .titleRow p {
+	font-size: .6em;
+	margin: 0 2em;
+  }
+
+  .farmInfo .growsContainer .produceRow {
+	display: flex;
+	flex-grow: 1;
+  }
+
+  .farmInfo .produceGrown {
+	display: flex;
+	flex-grow: 0.5;
+	align-items: center;
+  }
+
+  .farmInfo .produceGrown img {
+	max-height: 2em;
+	margin-right: .5em;
+  }
+
+  .farmInfo .socialsContainer {
+	display: flex;
+	margin: 5vh 0;
+  }
+
+  .farmInfo .socialsContainer .socialLink {
+	display: flex;
+	align-items: center;
+	padding: 1em;
+  }
+
+  #igLink {
+	background-color: #E1306C;
+  }
+
+  #fbLink {
+	background-color: #3F51B5;
+  }
+
+  #webLink {
+	background-color: #3A82E4;
+  }
+
+  .farmInfo .socialsContainer .socialLink img {
+	height: 2em;
+	margin-right: .5em;
+  }
+
+  .farmInfo .socialsContainer .socialLink a {
+	color: #fff;
+	text-decoration: none;
+  }
+
+  .farmInfo .socialsContainer button {
+	margin-left: 2em;
+	border-style: none;
+	background-color: #6BA543;
+	color: #fff;
+	padding: 1em;
   }
   
   @media (max-width: 768px) {
