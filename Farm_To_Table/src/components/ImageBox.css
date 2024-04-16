@@ -2,10 +2,12 @@
 .image-container {
   position: relative;
   display: inline-block;
+  padding-left: 8%;
 }
 
 .image-container img {
   display: block;
+  padding-left: 8%;
 }
 
 .text-overlay {

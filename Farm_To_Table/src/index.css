@@ -12,6 +12,7 @@
 .container > div {
   flex: 1; /* Make each item grow to fill the available space */
   margin: 0 5px; /* Add a margin between each item */
+
 }
 
 .event-border {
@@ -123,6 +124,25 @@ h2 {
   }
 }
 
+.first-header {
+  padding-left: 8%;
+}
+
+.second-header {
+  padding-left: 8%;
+}
+.second-sub-header {
+  padding-left: 8%;
+}
+
+.third-header {
+  padding-left: 5%;
+}
+
+.second-sub-header {
+  padding-left: 5%;
+}
+
 .event-carousel-container {
   display: flex;
   flex-direction: row;
@@ -130,10 +150,15 @@ h2 {
   height: 300px;
   margin: auto;
   padding-bottom: 10%;
+  padding-left: 5%;
 }
 
 .description p {
   margin: 20px;
+}
+
+.description-container {
+  padding-left: 3%;
 }
 
 /* .event-info-left {
@@ -172,6 +197,7 @@ h2 {
   display: flex;
   flex-direction: row;
   border: 2px solid white;
+  padding-left: 8%;
 }
 
 .left-panel {
