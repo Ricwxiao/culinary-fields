@@ -22,7 +22,7 @@ export default function App() {
       </header>
       <Routes>
       <Route path="/" element={<HomePage />} />
-      {/* <Route path="/" element={<FarmerInfo />} /> */}
+      <Route path="/farmfinder" element={<FarmerInfo />} />
         <Route path='/recipes' element={<Recipe />} />
       </Routes>
       <footer>

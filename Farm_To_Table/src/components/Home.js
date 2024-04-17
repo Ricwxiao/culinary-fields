@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet, NavLink } from "react-router-dom";
 import '../index.css';
 import spotlightImg from "../components/img/spotlight.png";
 import Navbar from '../components/NavBar';
