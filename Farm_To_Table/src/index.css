@@ -85,12 +85,12 @@
   padding-left: 0px;
 }
 
-img {
+.HomePage img {
   border-radius: 8px;
   flex: 1 0 200px;
 }
 
-h1 {
+.HomePage h1 {
   color: #000;
   font-family: "Noto Sans";
   font-size: 36px;
@@ -99,7 +99,7 @@ h1 {
   line-height: normal;
 }
 
-h2 {
+.HomePage h2 {
   color: #000;
   font-family: "Noto Sans";
   font-size: 24px;
