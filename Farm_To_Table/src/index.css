@@ -7,11 +7,13 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-left: 5em;
 }
 
 .container > div {
   flex: 1; /* Make each item grow to fill the available space */
   margin: 0 5px; /* Add a margin between each item */
+
 
 }
 
@@ -32,7 +34,7 @@
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
-  padding-left: 0px;
+  padding-left: 10px;
 }
 
 .item-1 {
@@ -43,6 +45,7 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
+  margin: 0 auto;
 }
 
 .item-2 {
@@ -53,6 +56,7 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
+  margin: 0 auto;
 }
 
 .item-3 {
@@ -62,7 +66,8 @@
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
-  padding-left: 0px;
+  padding-left: px;
+  margin: 0 auto;
 }
 
 .item-4 {
@@ -73,6 +78,7 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
+  margin: 0 auto;
 }
 
 .item-5 {
@@ -197,7 +203,8 @@
   display: flex;
   flex-direction: row;
   border: 2px solid white;
-  padding-left: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .left-panel {
@@ -232,6 +239,11 @@
   .container img {
     flex-basis: calc(100% - 10px); /* Adjust the margins as needed */
   }
+}
+
+.text-overlay {
+  padding-left: 30;
+
 }
 
 /*----------------------------------------------------------------------------*/
