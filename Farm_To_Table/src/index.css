@@ -9,7 +9,10 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin-left: 5em;
+<<<<<<< HEAD
   margin-right: 5em;
+=======
+>>>>>>> refs/remotes/origin/homepage
 }
 
 .container > div {
@@ -18,6 +21,7 @@
   border-radius: 11.264px;
   border: 0.704px solid var(---, #EBEBED);
   box-shadow: 0px 7.04px 18.303px 0px rgba(0, 0, 0, 0.10);
+
 
 }
 
@@ -49,7 +53,7 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  margin: 20px;
+  margin: 0 auto;
 }
 
 .item-2 {
@@ -60,8 +64,7 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  margin-left: -5px;
-  margin-right: -5px;
+  margin: 0 auto;
 }
 
 .item-3 {
@@ -72,8 +75,7 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0 auto;
 }
 
 .item-4 {
@@ -216,7 +218,10 @@
   border: 2px solid white;
   padding-left: 10%;
   padding-right: 10%;
+<<<<<<< HEAD
   margin: 0 auto;
+=======
+>>>>>>> refs/remotes/origin/homepage
 }
 
 .left-panel {
@@ -255,6 +260,7 @@
   }
 }
 
+<<<<<<< HEAD
 .image-container {
   position: relative;
   display: inline-block;
@@ -276,6 +282,11 @@
   padding-bottom: -10px;
   font-size: 1em;
   background-color: grey;
+=======
+.text-overlay {
+  padding-left: 30;
+
+>>>>>>> refs/remotes/origin/homepage
 }
 
 /*----------------------------------------------------------------------------*/
