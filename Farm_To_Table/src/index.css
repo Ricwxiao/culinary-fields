@@ -2,18 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-left: 5em;
+  margin-right: 5em;
 }
 
 .container > div {
-  flex: 1; /* Make each item grow to fill the available space */
-  margin: 0 5px; /* Add a margin between each item */
-
+  flex: 0; /* Make each item grow to fill the available space */
+  margin: 0; /* Add a margin between each item */
+  border-radius: 11.264px;
+  border: 0.704px solid var(---, #EBEBED);
+  box-shadow: 0px 7.04px 18.303px 0px rgba(0, 0, 0, 0.10);
 
 }
 
@@ -45,7 +49,7 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  margin: 0 auto;
+  margin: 20px;
 }
 
 .item-2 {
@@ -56,7 +60,8 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  margin: 0 auto;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 .item-3 {
@@ -67,7 +72,8 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: px;
-  margin: 0 auto;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .item-4 {
@@ -89,6 +95,15 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
+}
+
+.item-6 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
 }
 
 .HomePage img {
@@ -142,11 +157,11 @@
 }
 
 .third-header {
-  padding-left: 5%;
+  padding-left:8%;
 }
 
 .second-sub-header {
-  padding-left: 5%;
+  padding-left: 8%;
 }
 
 .event-carousel-container {
@@ -156,7 +171,7 @@
   height: 300px;
   margin: auto;
   padding-bottom: 10%;
-  padding-left: 5%;
+  margin-left: 10%;
 }
 
 .description p {
@@ -185,10 +200,6 @@
   width: 10px;
 } */
 
-.image-container {
-  border: 2px solid white;
-}
-
 .description-container {
   display: flex;
   flex-direction: row;
@@ -205,6 +216,7 @@
   border: 2px solid white;
   padding-left: 10%;
   padding-right: 10%;
+  margin: 0 auto;
 }
 
 .left-panel {
@@ -217,11 +229,13 @@
   flex-direction: column;
   border: 0px solid white;
   width: 50%;
+
 }
 
 .top-image {
   border: 2px solid white;
   height: 80%;
+  padding-bottom: -10px;
 }
 
 .bottom-image {
@@ -241,9 +255,27 @@
   }
 }
 
-.text-overlay {
-  padding-left: 30;
+.image-container {
+  position: relative;
+  display: inline-block;
+  padding-left: 0%;
+}
 
+.image-container img {
+  display: block;
+  padding-left: 0%;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-weight: bolder;
+  padding: 10px;
+  padding-bottom: -10px;
+  font-size: 1em;
+  background-color: grey;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -494,7 +526,7 @@
 	border-radius: 50%;
 	margin-right: 0.5rem;
   }
-    
+
   .badge {
 	border-radius: 20px;
 	background-color: #fff;
