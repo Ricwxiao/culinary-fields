@@ -1,5 +1,6 @@
 
-import "./ImageBox.css"
+// import "./ImageBox.css"
+import "../index.css"
 
 export default function ImageBox ({src, text, alt, width, height}) {
   return (
