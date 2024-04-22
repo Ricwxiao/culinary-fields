@@ -9,10 +9,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin-left: 5em;
-<<<<<<< HEAD
   margin-right: 5em;
-=======
->>>>>>> refs/remotes/origin/homepage
 }
 
 .container > div {
@@ -218,10 +215,8 @@
   border: 2px solid white;
   padding-left: 10%;
   padding-right: 10%;
-<<<<<<< HEAD
   margin: 0 auto;
-=======
->>>>>>> refs/remotes/origin/homepage
+
 }
 
 .left-panel {
@@ -282,11 +277,6 @@
   padding-bottom: -10px;
   font-size: 1em;
   background-color: grey;
-=======
-.text-overlay {
-  padding-left: 30;
-
->>>>>>> refs/remotes/origin/homepage
 }
 
 /*----------------------------------------------------------------------------*/
