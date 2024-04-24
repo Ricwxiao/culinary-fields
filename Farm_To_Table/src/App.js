@@ -9,6 +9,7 @@ import HomePage from './components/Home';
 import Recipe from './components/Recipe';
 import FarmerInfo from "./components/FarmerInfo/FarmerInfo";
 import Footer from "./components/Footer";
+import Article from './components/Article';
 
 // import component pages
 // import Home from "./components/Home";
@@ -22,8 +23,9 @@ export default function App() {
       </header>
       <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path='/spotlight' element={<Article />} />
       <Route path="/farmfinder" element={<FarmerInfo />} />
-        <Route path='/recipes' element={<Recipe />} />
+      <Route path='/recipes' element={<Recipe />} />
       </Routes>
       <footer>
         <Footer/>
