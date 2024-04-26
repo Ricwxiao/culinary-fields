@@ -18,6 +18,7 @@ import ImageIcon from './ImageIcon';
 
 
 
+
 // robert's line
 // we want to keep this line of code
 
@@ -55,7 +56,8 @@ export default function HomePage(props) {
         <h2 className="second-sub-header"> Receipes </h2>
       <div class="container">
         <div className = "item-6">
-          <ImageBox src={stirfryImg} alt="farmer spotlight" width="350px" height="350px" text="Stir Fry Bitter Melon"/>
+          <ImageBox src={stirfryImg} alt="farmer spotlight" width="350px" height="350px" text="Stir Fry Bitter Melon" />
+
         </div>
         <div className = "item-6">
           <ImageBox src={soysaucechoysumImg} alt="farmer spotlight" width="350px" height="350px" text="Soy Sauce Choysum"/>

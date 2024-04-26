@@ -3,6 +3,7 @@ import spotlightImg from "../components/img/spotlight.png";
 import caphillImg from "../components/img/caphill.jpg";
 import bokchoyreceipeImg from "../components/img/bokchoyreceipe.jpg";
 import SpotlightImageBox from './SpotlightImageBox';
+
 import ImageIcon from './ImageIcon';
 
 function ImageCarousel({ height, width }) {
