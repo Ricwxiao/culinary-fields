@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Pacific Roots
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is team Culinary Fields, where we are focusing on **“How might we help people in Seattle discover Asian produce grown in Puget Sound to support local Asian farmers and better connect with culture through food?”**
 
-## Available Scripts
+### Important Links
+- [Presentation Deck]()
+- [Final Product](https://culinaryfields.web.app/) 
+- [Github Repo](https://github.com/Ricwxiao/culinary-fields/tree/main)
+- [Email Contact](mailto:rob.bonglamphone@gmail.com)
 
-In the project directory, you can run:
+### Team Members:
+- Robert Bonglamphone - [Linkedin](https://www.linkedin.com/in/robbong/)
+- Ryan Le - [Linkedin](https://www.linkedin.com/in/ryan-v-le/)
+- Wayne Wang - [Linkedin](https://www.linkedin.com/in/-wayne/)
+- Taiga Hijikata - [Linkedin](https://www.linkedin.com/in/taigahijikata/)
+- Chaowei Xiao - [Linkedin](https://www.linkedin.com/in/chaowei-xiao-ux-web/)
 
-### `npm start`
+## Our Mission and Goals:
+At **Pacific Roots**, our vision is to bridge the gap between local Asian farmers and home chefs, particularly in the Seattle area, who are eager to explore and incorporate authentic Asian ingredients into their culinary practices. Amidst the challenges posed by disrupted supply chains post-COVID-19, our platform aims to enhance visibility for local farms, facilitate easier access to high-quality, culturally rich ingredients, and foster a deeper understanding and appreciation of Asian culinary traditions among the community.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+We want to:
+- **Help** people who struggle to make time and vehicles to visit multiple shops at once;
+- **Discover** local farmers by providing information on the specialty produce from each farm, along with corresponding recipes;
+- **Inform** various types of produce and ingredients;
+- **Enable** quickly access to sources of their produce and see the quality/freshness;
+- **Provide** authentic cuisine ​​ideas, recipes, storage tips, etc.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Our Core Concepts:
+- **Community Building through Food:** We want to build a sense of Community through Food. We have a page for farmers and consumers to share produce-related recipes, by that we aim to foster community and informal communication on the platform for both sides.
 
-### `npm test`
+- **Asian Produce:** We aim to concentrate our efforts specifically on Asian produce. According to our research, we found that only about 1% of the state’s farm producers are Asian and only a small fraction of them grow vegetables.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Discover Fresh Produce and New Farmers:** Most importantly, we aim to help and motivate people to discover Fresh Produce and New Farmers. We use a kind of Top-down process here, where user-generated content (recipe) motivates people to explore more on the specialty produce.
 
-### `npm run build`
+## Current Features:
+- **Feature 1: Discover Local Farms & Learn**
+  - Weekly Spotlight Carousel of Farmers
+  - Starring a local Asian farmer’s story as a blog post and links to their social media and official website.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Feature 2: Finding Recipes Using Local Asian Produce**
+  - List view of the produces
+  - Search
+  - Filter
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Feature 3: Finding Local Produce**
+  - Search & Filter
+  - List of Farms
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Development Instructions:
+### Built with:
+- **React.js:** A JavaScript library for building user interfaces.
+- **HTML/CSS/JavaScript:** Core technologies for building web pages.
+- **Firebase:** A comprehensive app development platform used for its real-time database, authentication, and hosting capabilities.
 
-### `npm run eject`
+### Enviroment Setup  
+1. **Install all npm packages**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Navigate to the project folder and run:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Start the Development Server**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    To run the application, type the following command:
 
-## Learn More
+    ```bash
+    npm start
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Stop the server with `Ctrl + C`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **If you encounter any issues, try executing the following commands:**
+    
+    ```bash
+    rm -rf node_modules
+    npm install
+    ```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Continuing the Project:
+### User Research
+Conduct user research and explore the idea that customers are looking for convenient pick-up locations to collect all their produce and ingredients all at once. 
 
-### Analyzing the Bundle Size
+### Proposed Features (prioritized from top to bottom)
+**Search Engine Optimization**
+- Run a usability test to gauge how users are interacting with the search bar and collect feedback on how they can improve the experience, so they can easily find farms and attain relevant results. 
+- Questions include:
+ - What pieces of info do they find most relevant?
+ - What filters can help with their search?
+ - Obtaining a user’s IP address to approximate location to populate top search results with Asian farms and stores that are in close proximity
+ - Creating filters based on distance, certified organic or not, type of vegetable grown
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Onboarding**  
+Profile
+- Mainly for farmers to create and share their recipes that use their ingredients. Hopefully, it provides a more authentic experience for users since the recipes are coming from the farmers and is another way to get to know them.
 
-### Making a Progressive Web App
+User Authentication
+- For users to personalize their website experience by either setting up a password or PIN number. We would want users to be able to generate their own profile and add more personal information features such as their preference in Asian products, groceries, and farmers in the Puget Sound. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Space and Time Visualization**
+- The mission of this project is to curate the Asian farms and retailers in the Puget Sound Area (arguably expandable to other metropolitan areas as well) to users who are interested in Asian cuisines. A solution is to embed a map in which users can freely browse farms and retailers in the area, just like how they use the list of search results as in our current iteration.  
+- For users who had pre-ordered produces that are grown on-demand, the map view can provide them information about what stage the produce is in its growth, which location the produce is grown in, and how soon the produce is expected to mature. By animated graphics representing the produces scattered on the map.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
