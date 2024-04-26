@@ -14,6 +14,7 @@ import kimchiImg from "../components/img/kimchi.jpg";
 import stirfryImg from "../components/img/stirfry.jpg";
 import soysaucechoysumImg from "../components/img/soysaucechoysum.jpg";
 import ImageBox from './ImageBox';
+import ImageIcon from './ImageIcon';
 
 
 
@@ -54,10 +55,10 @@ export default function HomePage(props) {
         <h2 className="second-sub-header"> Receipes </h2>
       <div class="container">
         <div className = "item-6">
-          <ImageBox src={stirfryImg} alt="farmer spotlight" width="350px" height="350px" text="Stir Fry Bitter Melon" />
+          <ImageBox src={stirfryImg} alt="farmer spotlight" width="350px" height="350px" text="Stir Fry Bitter Melon"/>
         </div>
         <div className = "item-6">
-          <ImageBox src={soysaucechoysumImg} alt="farmer spotlight" width="350px" height="350px" text="Soy Sauce Choysum" />
+          <ImageBox src={soysaucechoysumImg} alt="farmer spotlight" width="350px" height="350px" text="Soy Sauce Choysum"/>
         </div>
         <div className = "item-6">
           <ImageBox src={kimchiImg} alt="farmer spotlight" width="350px" height="350px" text="Kimchi" />
