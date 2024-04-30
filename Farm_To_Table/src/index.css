@@ -527,136 +527,141 @@
 	margin-right: 0.5rem;
   }
 
+  /* ---------------------Badge.js----------------------- */
+
   .badge {
-	border-radius: 20px;
-	background-color: #fff;
-	box-shadow: 4px 4px 10px 0px rgba(116, 116, 116, 0.25);
-	display: flex;
-	max-height: 10em;
-	min-width: 30vw;
-	align-items: center;
-	padding: .5em;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px 0px rgba(116, 116, 116, 0.25);
+    display: flex;
+    max-height: 10em;
+    min-height: 75px;
+    min-width: 30vw;
+    align-items: center;
+    padding: .5em;
   }
 
   .badge img {
-	width: 40px;
-	height: 40px;
-	border-radius: 200px;
-	margin-left: .8em;
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+    margin-left: .8em;
   }
 
   .badge .labels {
-	display: flex;
-	flex-direction: column;
-	margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
 
   }
 
   .badge h1 {
-	font-size: 1em;
-	margin-bottom: 0;
+    font-size: 1em;
+    margin-bottom: 0;
   }
 
   .badge p {
-	font-size: .4em;
-	color: #5d5d5d;
-	margin-top: 0;
+    font-size: .4em;
+    color: #5d5d5d;
+    margin-top: 0;
   }
 
+  /* ---------------------FarmerInfo.js----------------------- */
+
   .farmInfo {
-	display: flex;
-	padding: 1em;
-	flex-direction: column;
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
   }
 
   .farmInfo .profileRow {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 
   .farmInfo .coverPic {
-	object-fit: initial;
-	width: 60%;
-	height: 60%;
+    object-fit: initial;
+    width: 60%;
+    height: 60%;
   }
 
   .farmInfo .growsContainer {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .farmInfo .growsContainer .titleRow {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	align-items: baseline;
-	padding: 0 .5em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+    padding: 0 .5em;
   }
 
   .farmInfo .growsContainer h3 {
-	font-size: 1.5em;
+	  font-size: 1.5em;
   }
 
   .farmInfo .growsContainer .titleRow p {
-	font-size: .6em;
-	margin: 0 2em;
+    font-size: .6em;
+    margin: 0 2em;
   }
 
   .farmInfo .growsContainer .produceRow {
-	display: flex;
-	flex-grow: 1;
+    display: flex;
+    flex-grow: 1;
   }
 
   .farmInfo .produceGrown {
-	display: flex;
-	flex-grow: 0.5;
-	align-items: center;
+    display: flex;
+    flex-grow: 0.5;
+    align-items: center;
   }
 
   .farmInfo .produceGrown img {
-	max-height: 2em;
-	margin-right: .5em;
+    max-height: 2em;
+    margin-right: .5em;
   }
 
   .farmInfo .socialsContainer {
-	display: flex;
-	margin: 5vh 0;
+    display: flex;
+    margin: 5vh 0;
   }
 
   .farmInfo .socialsContainer .socialLink {
-	display: flex;
-	align-items: center;
-	padding: 1em;
+    display: flex;
+    align-items: center;
+    padding: 1em;
   }
 
   #igLink {
-	background-color: #E1306C;
+	  background-color: #E1306C;
   }
 
   #fbLink {
-	background-color: #3F51B5;
+	  background-color: #3F51B5;
   }
 
   #webLink {
-	background-color: #3A82E4;
+	  background-color: #3A82E4;
   }
 
   .farmInfo .socialsContainer .socialLink img {
-	height: 2em;
-	margin-right: .5em;
+    height: 2em;
+    margin-right: .5em;
   }
 
   .farmInfo .socialsContainer .socialLink a {
-	color: #fff;
-	text-decoration: none;
+    color: #fff;
+    text-decoration: none;
   }
 
   .farmInfo .socialsContainer button {
-	margin-left: 2em;
-	border-style: none;
-	background-color: #6BA543;
-	color: #fff;
-	padding: 1em;
+    margin-left: 2em;
+    border-style: none;
+    background-color: #6BA543;
+    color: #fff;
+    padding: 1em;
   }
 
   .farmInfo .starringContainer {
@@ -697,3 +702,61 @@
 
   /* --------------------------------------------- Footer ------*/
 
+/* ---------------------Article.js----------------------- */
+
+.articlePage {
+  font-family: "Noto Sans";
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.articlePage h1 {
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articleBy .authour {
+  font-weight: 700;
+}
+
+.articleBy .job {
+  font-style: italic;
+  color: #a4a4a4;
+}
+
+.articlePage .articleImg {
+  max-width: 60vw;
+  align-self: center;
+  border-radius: 20px;
+	box-shadow: 4px 4px 10px 0px rgba(116, 116, 116, 0.25);
+  margin: 2em 0;
+}
+
+.articlePage .splt-parag {
+  max-width: 80vw;
+  margin: 1em 10vw;
+}
+
+.articlePage .previousSpltBtn {
+  max-width: 200px;
+  align-self: center;
+  margin: 2em 0;
+  border-style: none;
+  border-radius: 10px;
+  padding: 1em;
+  color: #fff;
+  background-color: #2C6E49;
+  display: flex;
+  align-items: center;
+}
+
+.articlePage .quote {
+  align-self: center;
+  font-size: 2em;
+  font-weight: 900;
+  color: rgb(152, 39, 39);
+  margin: 1em 10vw;
+}
