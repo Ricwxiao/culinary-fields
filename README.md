@@ -3,7 +3,7 @@
 This is team Culinary Fields, where we are focusing on **“How might we help people in Seattle discover Asian produce grown in Puget Sound to support local Asian farmers and better connect with culture through food?”**
 
 ### Important Links
-- [Presentation Deck]()
+- [Presentation Deck](https://docs.google.com/presentation/d/1Ai8QAL28ZpZaDfakk4u6cCzIkbD9E1Uiulip5iyB8Bo/edit?usp=sharing)
 - [Final Product](https://culinaryfields.web.app/) 
 - [Github Repo](https://github.com/Ricwxiao/culinary-fields/tree/main)
 - [Email Contact](mailto:rob.bonglamphone@gmail.com)
