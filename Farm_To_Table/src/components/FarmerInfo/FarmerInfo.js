@@ -1,7 +1,7 @@
 import React from "react";
 import Badge from "./Badge";
 import { RecipeCard } from "../Recipe";
-import FARMS from "../../data/farms.json";
+import FARMS from "../../data/FARMS.json";
 
 
 export default function FarmerInfo(props) {
