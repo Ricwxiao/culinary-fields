@@ -26,6 +26,7 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path='/spotlight' element={<Article />} />
       <Route path="/farmfinder" element={<FFFinder />} />
+      <Route path="/farmerInfo" element={<FarmerInfo />} />
       <Route path='/recipes' element={<Recipe />} />
       </Routes>
       <footer>
