@@ -11,10 +11,10 @@ export default function FarmerInfo(props) {
         farmName = "Tian Tian Farm"
     }
 
-    function findFarmByName(farms, name) {
-        return farms.find(farm => farm.name === name);
+    function findFarmByName(farmList, name) {
+        return farmList.find(farm => farm.name === name);
     }
-    let farm = findFarmByName(FARMS, farmName);
+    let farmObj = findFarmByName(FARMS, farmName);
 
     return (
 
