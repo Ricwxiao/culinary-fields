@@ -61,7 +61,7 @@ export default function HomePage(props) {
             <ImageBox src={soysaucechoysumImg} alt="Receipe 2" width="350px" height="350px" text="Soy Sauce Choysum"/>
           </div>
           <div className = "item-2">
-            <ImageBox src={kimchiImg} alt="Receipe 3" width="350px" height="350px" text="Kimchi" />
+            <ImageBox src={kimchiImg} alt="Receipe 3" width="350px" height="350px" text="Easy Kimchi" />
           </div>
         </div>
         {/* <header>

@@ -7,7 +7,9 @@ export default function ImageBox ({src, text, text2, alt, width, height}) {
   return (
     <div className="image-container">
       <img src={src} alt={alt} width={width} height={height} />
-      <p className="text-overlay">{text}</p>
+      <div className="Overlay">
+        <p className="text-overlay">{text}</p>
+      </div>
     </div>
 
   )
