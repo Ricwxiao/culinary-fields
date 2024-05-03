@@ -2,33 +2,27 @@ import React from "react";
 import Badge from "./Badge";
 import { RecipeCard } from "../Recipe";
 import FARMS from "../../data/FARMS.json";
+import useParams from "react-router-dom"
 
 
 export default function FarmerInfo(props) {
-    let farmName = props.farmName;
+    let {id} = useParams();
 
-    if (!props.farmName) {
-        farmName = "Tian Tian Farm"
-    }
-
-    function findFarmByName(farmList, name) {
-        return farmList.find(farm => farm.name === name);
-    }
-    let farmObj = findFarmByName(FARMS, farmName);
+    let farm = FARMS[id]
 
     return (
 
         <div className="farmInfo">
 
-            <h1>{farmName}</h1>
+            <h1>{farm.name}</h1>
 
             <div className="profileRow">
-                <img className="coverPic" src={`/imgs/tian_tian_farm_pic.jpg`} alt={"Images of " + farmName}></img>
+                <img className="coverPic" src={`/imgs/tian_tian_farm_pic.jpg`} alt={"Images of " + farm.name}></img>
                 <div className="badgeAndGrows">
                     <Badge 
                         img={`/imgs/tian_tian_farm.png`} 
-                        name={farmName}
-                        address={"24026 Wax Orchard Rd SW, Vashon, WA 98070"}
+                        name={farm.name}
+                        address={farm.address}
                     />
                     <div className="growsContainer">
 
