@@ -305,7 +305,7 @@
   /* padding-right: 50px;*/
   padding: 10px;
   font-size: 1em;
-  background-color: grey;
+  background-color: rgba(0,0,0, 0.5);
   margin: 0;
   width: auto;
 }
