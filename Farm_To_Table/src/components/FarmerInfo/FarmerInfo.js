@@ -8,24 +8,38 @@ import { useParams } from "react-router-dom";
 export default function FarmerInfo(props) {
     let { id } = useParams();
 
+    id = parseInt(id);
+
     let ttf = {
         "id": 0,
         "img": "../imgs/tian_tian_farm.png",
         "name": "Tian Tian Farm",
         "address": "24026 Wax Orchard Rd SW, Vashon, WA 98070",
         "website": "https://www.tiantian.farm/"
-      };
+    };
 
-    let farm = farmsData[id] ?? ttf
+    let farm = farmsData.find(farm => farm.id === id) ?? ttf
+
+    // console.log(`now showing FarmerInfo for an id of ${id}, and the farm should be ${JSON.stringify(farm)}`)
 
     return (
 
         <div className="farmInfo">
+            
+{/* 
+            This thing is hard coded to present detail info of Tian Tian Farm, there are several changes that should be made:
+            - For items below, works on both JSON and the div needed to be done:
+                - collect images for each farm
+                - collect icons for each farm
+                - specify produces of each farm
+                - write stories for each farm
+                - specify starring recipes for each farm
+ */}
 
             <h1>{farm.name}</h1>
 
             <div className="profileRow">
-                <img className="coverPic" src={`/imgs/tian_tian_farm_pic.jpg`} alt={"Images of " + farm.name}></img>
+                <img className="coverPic" src={farm.img} alt={"Images of " + farm.name}></img>
                 <div className="badgeAndGrows">
                     <Badge 
                         img={`/imgs/tian_tian_farm.png`} 
