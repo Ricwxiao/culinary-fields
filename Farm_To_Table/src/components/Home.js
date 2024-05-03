@@ -39,14 +39,13 @@ export default function HomePage(props) {
         <header className="first-title">
           <h1 className="header"> Spotlight </h1>
         </header>
-        <ImageCarousel height={500} width={800} />
-
+        <ImageCarousel height={500} width={1000} />
 
         <header>
           <h1 className="header"> IN SEASON </h1>
           <h2 className="sub-header"> Produces </h2>
         </header>
-        <div class="container">
+        <div class="produce-container">
           <div className = "item-1"> <img src={bittermelonImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
           <div className = "item-1"> <img src={eggplantImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
           <div className = "item-1"> <img src={greenonionImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
@@ -65,11 +64,11 @@ export default function HomePage(props) {
             <ImageBox src={kimchiImg} alt="Receipe 3" width="350px" height="350px" text="Kimchi" />
           </div>
         </div>
-        <header>
+        {/* <header>
           <h1 className="header"> EVENTS </h1>
           <h2 className="sub-header"> This Week </h2>
           <EventCarousel height={500} width={800} desc={"Event 1"} date={"Apr 30, Mon.6:00-8:00pm"} location={"4321 12th Ave NE"} cost={"$100"}/>
-        </header>
+        </header> */}
       </div>
     </body>
   )
