@@ -14,6 +14,9 @@ import kimchiImg from "../components/img/kimchi.jpg";
 import stirfryImg from "../components/img/stirfry.jpg";
 import soysaucechoysumImg from "../components/img/soysaucechoysum.jpg";
 import ImageBox from './ImageBox';
+import ImageIcon from './ImageIcon';
+
+
 
 
 // robert's line
@@ -34,39 +37,38 @@ export default function HomePage(props) {
     <body>
       <div className="HomePage">
         <header className="first-title">
-          <h1 className="first-header"> Spotlight </h1>
+          <h1 className="header"> Spotlight </h1>
         </header>
-        <ImageCarousel height={500} width={800} />
+        <ImageCarousel height={500} width={1000} />
 
-
-      <header>
-        <h1 className="second-header"> IN SEASON </h1>
-        <h2 className="second-sub-header"> Produces </h2>
-      </header>
-      <div class="container">
-        <div className = "item-1"> <img src={bittermelonImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
-        <div className = "item-2"> <img src={eggplantImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
-        <div className = "item-3"> <img src={greenonionImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
-        <div className = "item-4"> <img src={bokchoyImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
-        <div className = "item-5"> <img src={califlowerImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
-      </div>
-        <h2 className="second-sub-header"> Receipes </h2>
-      <div class="container">
-        <div className = "item-6">
-          <ImageBox src={stirfryImg} alt="farmer spotlight" width="350px" height="350px" text="Stir Fry" />
+        <header>
+          <h1 className="header"> IN SEASON </h1>
+          <h2 className="sub-header"> Produces </h2>
+        </header>
+        <div class="produce-container">
+          <div className = "item-1"> <img src={bittermelonImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
+          <div className = "item-1"> <img src={eggplantImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
+          <div className = "item-1"> <img src={greenonionImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
+          <div className = "item-1"> <img src={bokchoyImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
+          <div className = "item-1"> <img src={califlowerImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
         </div>
-        <div className = "item-6">
-          <ImageBox src={soysaucechoysumImg} alt="farmer spotlight" width="350px" height="350px" text="Soy Sauce Choysum" />
+          <h2 className="sub-header"> Receipes </h2>
+        <div class="container">
+          <div className = "item-2">
+            <ImageBox src={stirfryImg} alt="Receipe 1" width="350px" height="350px" text="Stir Fry Bitter Melon" />
+          </div>
+          <div className = "item-2">
+            <ImageBox src={soysaucechoysumImg} alt="Receipe 2" width="350px" height="350px" text="Soy Sauce Choysum"/>
+          </div>
+          <div className = "item-2">
+            <ImageBox src={kimchiImg} alt="Receipe 3" width="350px" height="350px" text="Easy Kimchi" />
+          </div>
         </div>
-        <div className = "item-6">
-          <ImageBox src={kimchiImg} alt="farmer spotlight" width="350px" height="350px" text="Kimchi" />
-        </div>
-      </div>
-      <header>
-        <h1 className="third-header"> EVENTS </h1>
-        <h2 className="second-sub-header"> This Week </h2>
-        <EventCarousel height={500} width={800}/>
-      </header>
+        {/* <header>
+          <h1 className="header"> EVENTS </h1>
+          <h2 className="sub-header"> This Week </h2>
+          <EventCarousel height={500} width={800} desc={"Event 1"} date={"Apr 30, Mon.6:00-8:00pm"} location={"4321 12th Ave NE"} cost={"$100"}/>
+        </header> */}
       </div>
     </body>
   )

@@ -1,5 +1,5 @@
 import React from "react";
-import farmsData from "../data/FARMS.json"
+import farmsData from "../data/farms.json"
 import { NavLink, useParams } from "react-router-dom";
 
 export default function FFFinder(props) {
