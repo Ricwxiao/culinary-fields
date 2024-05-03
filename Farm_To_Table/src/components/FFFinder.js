@@ -21,7 +21,7 @@ export default function FFFinder(props) {
                         <h3>{farmObj.name}</h3>
                         <a href={farmObj.website}>Website</a>
                         <p>{farmObj.address}</p>
-                        <NavLink to={`/farmerinfo/:${farmObj.id}`}>
+                        <NavLink to={`/farmerinfo/${farmObj.id}`}>
                             <button>Learn More</button>
                         </NavLink>
                     </div>
