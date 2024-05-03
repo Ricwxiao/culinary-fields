@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Component } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate, Switch, useRoutes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate, Switch, useRoutes, useParams } from "react-router-dom";
 import './App.css';
 import Home from "./components/Home";
 import Navbar from './components/NavBar';
@@ -26,7 +26,7 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path='/spotlight' element={<Article />} />
       <Route path="/farmfinder" element={<FFFinder />} />
-      <Route path="/farmerInfo" element={<FarmerInfo />} />
+      <Route path="/farmerinfo/:id" element={<FarmerInfo />} />
       <Route path='/recipes' element={<Recipe />} />
       </Routes>
       <footer>
