@@ -14,9 +14,11 @@ export default function FarmerInfo(props) {
         "name": "Tian Tian Farm",
         "address": "24026 Wax Orchard Rd SW, Vashon, WA 98070",
         "website": "https://www.tiantian.farm/"
-      };
+    };
 
-    let farm = farmsData[id] ?? ttf
+    let farm = farmsData.find(farm => farm.id === id) ?? ttf
+
+    console.log(`now showing FarmerInfo for an id of ${id}, and the farm should be ${farm}`)
 
     return (
 
