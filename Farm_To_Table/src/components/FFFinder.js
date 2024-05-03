@@ -1,6 +1,6 @@
 import React from "react";
-import farmsData from '../data/FARMS.json';
-import { NavLink } from "react-router-dom";
+import farmsData from "../data/farms.json"
+import { NavLink, useParams } from "react-router-dom";
 
 export default function FFFinder(props) {
     // let farmsArr = []
@@ -16,18 +16,17 @@ export default function FFFinder(props) {
 
     function FarmsList(props) {
         return(
-            farmsData.map((farmObj, index) => {
-                return (
-                    <NavLink to={"/farmerInfo"} key={index}>
-                        <div>
-                            <h3>{farmObj.name}</h3>
-                            <a href={farmObj.website}>Website</a>
-                            <p>{farmObj.address}</p>
+            farmsData.map((farmObj) => (
+                    <div className="farmListItem" key={farmObj.id}>
+                        <h3>{farmObj.name}</h3>
+                        <a href={farmObj.website}>Website</a>
+                        <p>{farmObj.address}</p>
+                        <NavLink to={`/farmerinfo/:${farmObj.id}`}>
                             <button>Learn More</button>
-                        </div>
-                    </NavLink>
+                        </NavLink>
+                    </div>
                 )
-            })
+            )
         )
     }
 }
