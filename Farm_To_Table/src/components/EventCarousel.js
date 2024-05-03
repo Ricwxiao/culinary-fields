@@ -1,18 +1,28 @@
 import spotlightImg from "../components/img/spotlight.png";
 
-function EventCarousel({ height, width }) {
+function EventCarousel({ height, width, desc, date, location, cost }) {
   return (
     <div className="event-carousel-container">
-      <div className="image-container">
-        <img src={spotlightImg} alt="farmer spotlight" width="300px" height="300px"/>
+
+      <div className="event-image-container">
+        <img src={spotlightImg} alt="farmer spotlight" /*width="300px" height="300px"*//>
       </div>
       <div className="description-container">
         <div className="description">
-          <h1> Event Description </h1>
+          <h1 className="header"> {desc} </h1>
           <div className="event-info-container">
-            <div>Date</div>
-            <div>Time</div>
-            <div>Location</div>
+            <div className="info-box">
+              <img src="/imgs/home_page/cost.svg" alt="time"></img>
+              <p className="box-text">{date}</p>
+            </div>
+            <div className="info-box">
+              <img src="/imgs/home_page/pin.svg" alt="location"></img>
+              <p className="box-text">{location}</p>
+            </div>
+            <div className="info-box">
+              <img src="/imgs/home_page/time.svg" alt="cost"></img>
+              <p className="box-text">{cost}</p>
+            </div>
           </div>
           <p className="event-paragraph">  Chef Pascal Chureau, chef/owner of Field & Vine Events,
             has teamed up with some prominent wineries—Domaine Serene,
@@ -23,15 +33,5 @@ function EventCarousel({ height, width }) {
     </div>
   )
 }
-
-
-<div className="right-panel">
-        <div className="top-image">
-          <img src={spotlightImg} alt="farmer spotlight" width="100%" height="100%"/>
-        </div>
-        <div className="bottom-image">
-          <img src={spotlightImg} alt="farmer spotlight" width="100%" height="100%"/>
-        </div>
-      </div>
 
 export default EventCarousel;
