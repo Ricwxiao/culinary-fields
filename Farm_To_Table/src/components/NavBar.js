@@ -4,10 +4,11 @@ import { Outlet, NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="nav">
-      <a href="/" className="site-title">Pacific Roots</a>
+      <div className="logo-header">
+        <img className="logo" src={ require("./img/navbarlogo.png")}/> 
+        <a className="site-title" href="/">Pacific Roots</a>
+      </div>
       <ul>
-        {/* <img src={ require("./images/home_icon.png")}/>  */}
-        {/* example picture code, logo */}
         <li className='nav-item'>
           <NavLink to="/" className="nav-link">
             Home
