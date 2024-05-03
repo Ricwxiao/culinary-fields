@@ -1,7 +1,7 @@
 import React from "react";
 import Badge from "./Badge";
 import { RecipeCard } from "../Recipe";
-import farmsData from "../../data/FARMS.json"
+import farmsData from "../../data/farms.json"
 import { useParams } from "react-router-dom";
 
 
