@@ -1,14 +1,22 @@
 import React from "react";
 import Badge from "./Badge";
 import { RecipeCard } from "../Recipe";
-import FARMS from "../../data/FARMS.json";
-import useParams from "react-router-dom"
+import farmsData from "../../data/FARMS.json"
+import { useParams } from "react-router-dom";
 
 
 export default function FarmerInfo(props) {
-    let {id} = useParams();
+    let { id } = useParams();
 
-    let farm = FARMS[id]
+    let ttf = {
+        "id": 0,
+        "img": "../imgs/tian_tian_farm.png",
+        "name": "Tian Tian Farm",
+        "address": "24026 Wax Orchard Rd SW, Vashon, WA 98070",
+        "website": "https://www.tiantian.farm/"
+      };
+
+    let farm = farmsData[id] ?? ttf
 
     return (
 
