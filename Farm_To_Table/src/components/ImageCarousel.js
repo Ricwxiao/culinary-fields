@@ -11,15 +11,11 @@ function ImageCarousel({ height, width }) {
   return (
     <div className="image-carousel-container" style={{ height: height, width: width }}>
       <div className="left-panel">
-<<<<<<< HEAD
-        <NavLink to="/spotlight" className="nav-link">
+        {/* <NavLink to="/spotlight" className="nav-link"> */}
         {/* <img src={spotlightImg} alt="farmer spotlight" width="500px" height="500px"/> */}
-        <ImageBox src={spotlightImg} alt="farmer spotlight" width="500px" height="500px" text="Story by Tian Tian Farm: Farming for the Asian Community" />
-=======
-        <NavLink to="/farmfinder" className="nav-link">
-        <SpotlightImageBox src={spotlightImg} alt="farmer spotlight" width="100%" height="500px" text="Story by Tian Tian Farm: Farming for the Asian Community" text2="Most Liked"/>
-
->>>>>>> homepage
+        {/* <ImageBox src={spotlightImg} alt="farmer spotlight" width="500px" height="500px" text="Story by Tian Tian Farm: Farming for the Asian Community" /> */}
+        <NavLink to="/spotlight" className="nav-link">
+          <SpotlightImageBox src={spotlightImg} alt="farmer spotlight" width="100%" height="500px" text="Story by Tian Tian Farm: Farming for the Asian Community" text2="Most Liked"/>
         </NavLink>
 
       </div>

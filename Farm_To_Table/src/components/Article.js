@@ -9,11 +9,11 @@ export default function Article() {
             <h1>Story of Tian Tian Farm: Farming for the Asian Community</h1>
             <p className="articleBy">By <span className="authour">Jade Yamazaki Stewart</span> <span className="job">Seattle Times staff reporter</span></p>
             <p>Aug. 12, 2021 at 6:00 am</p>
-            <Badge>
+            <Badge
                 img={`/imgs/tian_tian_farm.png`} 
                 name={farmName}
                 address={"24026 Wax Orchard Rd SW, Vashon, WA 98070"}
-            </Badge>
+            />
             <img className="articleImg" src={`/imgs/tian_tian_farm_pic.jpg`} alt={"Images of " + farmName}></img>
 
             <p className="splt-parag">
