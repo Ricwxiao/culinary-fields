@@ -339,6 +339,7 @@
 	min-height: 100vh;
 	position: relative;
 	background-color: var(--background-color);
+  font-family: 'Noto Sans', sans-serif;
   }
 
   .nav {
@@ -542,11 +543,18 @@
   }
 
   .recipe-card {
-	border: 1px solid #ddd;
-	border-radius: 10px;
-	overflow: hidden;
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
   }
+  
+  .recipe-card:hover {
+    transform: scale(1.03); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
 
   .user-info {
 	display: flex;
@@ -602,8 +610,8 @@
   }
 
   .badge img {
-    width: 40px;
-    height: 40px;
+    width: 3em;
+    height: 3em;
     border-radius: 200px;
     margin-left: .8em;
   }
@@ -612,10 +620,11 @@
     display: flex;
     flex-direction: column;
     margin: 0 1em;
-
+    color: black;
+    text-decoration: none;
   }
 
-  .badge h1 {
+  .badge h3 {
     font-size: 1em;
     margin-bottom: 0;
   }
@@ -714,6 +723,8 @@
   .farmInfo .socialsContainer .socialLink a {
     color: #fff;
     text-decoration: none;
+    display: flex;
+    align-items: center;
   }
 
   .farmInfo .socialsContainer button {
@@ -821,4 +832,54 @@
   font-weight: 900;
   color: rgb(152, 39, 39);
   margin: 1em 10vw;
+}
+
+/* ---------------------------- FFFinder.js ------------------------- */
+
+.fffPage .farmListContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fffPage .farmListItem {
+  width: 35vw;
+  margin: 1em;
+  padding: 1em 2em;
+  background-color: white;
+  border-radius: 20px;
+	box-shadow: 4px 4px 10px 0px rgba(116, 116, 116, 0.25);
+}
+
+.fffPage .websiteLink {
+  max-width: fit-content;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  padding: 0.4em 0;
+}
+
+.fffPage .websiteLink:hover {
+  border-bottom: rgb(0, 133, 108) solid 3px;
+}
+
+.fffPage .textInAnchor {
+  margin-left: 0.2em;
+}
+
+.fffPage p {
+  display: flex;
+}
+
+.fffPage .learnMoreBtn button {
+  max-width: 200px;
+  margin: 0.8em 0;
+  border-style: none;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.fffPage .learnMoreBtn button:hover {
+  border-style: solid;
+  border-color: rgb(0, 133, 108);
+  border-width: 3px;
 }

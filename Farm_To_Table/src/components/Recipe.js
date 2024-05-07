@@ -1,22 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 export const RecipeCard = ({ name, user, likes, image }) => {
-    const imageUrl = `/imgs/${image}`; 
-    return (
-      <div className="recipe-card">
-        <div className="recipe-image">
-          <img src={imageUrl} alt={name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-        <div className="recipe-info">
-          <h3 className="recipe-title">{name}</h3>
-          <div className="user-info">
-            <p className="user-name">{user}</p>
-            <p className="recipe-likes">{likes}</p>
-          </div>
+  const imageUrl = `/imgs/${image}`;
+  const navigate = useNavigate();
+
+  const navigateToDetails = () => {
+    navigate(`/recipe-details/${name.replace(/\s+/g, '-')}`); // Replace spaces with dashes for URL friendliness
+  };
+
+  return (
+    <div className="recipe-card" onClick={navigateToDetails}>
+      <div className="recipe-image">
+        <img src={imageUrl} alt={name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      </div>
+      <div className="recipe-info">
+        <h3 className="recipe-title">{name}</h3>
+        <div className="user-info">
+          <p className="user-name">{user}</p>
+          <p className="recipe-likes">{likes}</p>
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
 function Recipe() {
   const categories = ['All', 'Chinese', 'Japanese', 'Korean', 'Thai', 'Other'];
@@ -31,8 +38,8 @@ function Recipe() {
     { id: 4, name: 'Korean Rice Bowl', user: 'Son', likes: '4k+', category: 'Korean', image: 'Korean_rice_bowl.png' },
     { id: 5, name: 'Asian Fusion Salad', user: 'Healthy Eats', likes: '1.5k+', category: 'Other', image: 'image 9.png' },
   ];
-  
-  useState(() => {
+
+  useEffect(() => {
     setFilteredRecipes(recipes);
   }, []);
 
@@ -51,12 +58,12 @@ function Recipe() {
 
   return (
     <div className="recipe-container">
-    <section className="featured-dish">
-      <div className="carousel featured-dish-container">
-        <img src="/imgs/Stir_Fried_Bittermelon.png" alt="Featured dish" />
-        <p className="featured-dish-text">Weekly Featured Dishes: Stir Fried Bittermelon</p>
-      </div>
-    </section>
+      <section className="featured-dish">
+        <div className="carousel featured-dish-container">
+          <img src="/imgs/Stir_Fried_Bittermelon.png" alt="Featured dish" />
+          <p className="featured-dish-text">Weekly Featured Dishes: Stir Fried Bittermelon</p>
+        </div>
+      </section>
       <section className="filter-section">
         <div className="category-filter">
           {categories.map((category) => (

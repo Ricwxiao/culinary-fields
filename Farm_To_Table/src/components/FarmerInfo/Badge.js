@@ -6,7 +6,7 @@ export default function Badge(props) {
         <div className="badge">
             <img src={props.img} alt={"logo of "+props.name}></img>
             <div className="labels">
-                <h1>{props.name}</h1>
+                <h3>{props.name}</h3>
                 <p>{props.address}</p>
             </div>
         </div>
