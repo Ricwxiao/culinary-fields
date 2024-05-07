@@ -43,7 +43,11 @@ export default function HomePage(props) {
 
         <header>
           <h1 className="header"> IN SEASON </h1>
-          <h2 className="sub-header"> Produces </h2>
+          <div class="Produces-title">
+            <h2 className="sub-header"> Produces </h2>
+            <img src="/imgs/home_page/right-arrow.svg" alt="arrow"></img>
+          </div>
+
         </header>
         <div class="produce-container">
           <div className = "item-1"> <img src={bittermelonImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
@@ -52,7 +56,10 @@ export default function HomePage(props) {
           <div className = "item-1"> <img src={bokchoyImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
           <div className = "item-1"> <img src={califlowerImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
         </div>
+        <div class="Receipes-title">
           <h2 className="sub-header"> Receipes </h2>
+          <img src="/imgs/home_page/right-arrow.svg" alt="arrow"></img>
+        </div>
         <div class="container">
           <div className = "item-2">
             <ImageBox src={stirfryImg} alt="Receipe 1" width="350px" height="350px" text="Stir Fry Bitter Melon" />
