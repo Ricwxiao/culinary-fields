@@ -305,7 +305,7 @@
   /* padding-right: 50px;*/
   padding: 10px;
   font-size: 1em;
-  background-color: grey;
+  background-color: rgba(0,0,0, 0.5);
   margin: 0;
   width: auto;
 }
@@ -327,6 +327,7 @@
 	--background-color: #FAFAFA;;
 	--primary-color: #e8f1d4;
 	--secondary-color: #fff;
+  --brown: #D38D4C;
   }
 
   html {
@@ -349,6 +350,13 @@
 	padding: 0 1rem;
   }
 
+  .nav .logo {
+      max-width: 100%;
+      height: 3.5em;
+      padding-right: 0.8em;
+  }
+
+
   .nav ul {
 	list-style: none;
 	display: flex;
@@ -370,11 +378,20 @@
 
   .nav .site-title {
 	display: flex;
+  color: maroon;
 	margin-block-start: 0.65em;
 
-	color: var(--secondary-color);
 	font-size: 1.5em;
 	text-decoration: none;
+  }
+
+  .nav .logo-header {
+    display: flex;
+    margin-block-start: 0.2em;
+  }
+
+  .nav .logo-header .color {
+    color: black;
   }
 
   .logo-img {
