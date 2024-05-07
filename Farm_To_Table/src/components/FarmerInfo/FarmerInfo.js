@@ -39,10 +39,10 @@ export default function FarmerInfo(props) {
             <h1>{farm.name}</h1>
 
             <div className="profileRow">
-                <img className="coverPic" src={farm.img} alt={"Images of " + farm.name}></img>
+                <img className="coverPic" src={farm.coverimage} alt={"Images of " + farm.name}></img> 
                 <div className="badgeAndGrows">
                     <Badge 
-                        img={`/imgs/tian_tian_farm.png`} 
+                        img={farm.logo} 
                         name={farm.name}
                         address={farm.address}
                     />

@@ -602,8 +602,8 @@
   }
 
   .badge img {
-    width: 40px;
-    height: 40px;
+    width: 3em;
+    height: 3em;
     border-radius: 200px;
     margin-left: .8em;
   }

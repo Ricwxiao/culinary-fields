@@ -1,14 +1,14 @@
 [
   {
     "id": 0,
-    "img": "../imgs/tian_tian_farm.png",
+    "coverimage": "../imgs/tian_tian_farm_pic.jpg",
+    "logo": "../imgs/tian_tian_farm.png",
     "name": "Tian Tian Farm",
     "address": "24026 Wax Orchard Rd SW, Vashon, WA 98070",
     "website": "https://www.tiantian.farm/"
   },
   {
     "id": 1,
-    "img": "",
     "name": "Tuk Muk Farm",
     "address": "16215 140th Pl NE Woodinville, WA 98072",
     "website": "https://www.tukmukfarm.com/"
@@ -29,7 +29,8 @@
   },
   {
     "id": 4,
-    "img": "",
+    "coverimage": "../imgs/acrs.jpg",
+    "logo": "../imgs/acrs-logo.png",
     "name": "Seattle Community Farm",
     "address": "3639 Martin Luther King Junior Way S.",
     "website": "https://acrs.org/seattle-community-farm/"
