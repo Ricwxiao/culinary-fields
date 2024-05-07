@@ -339,6 +339,7 @@
 	min-height: 100vh;
 	position: relative;
 	background-color: var(--background-color);
+  font-family: 'Noto Sans', sans-serif;
   }
 
   .nav {
@@ -713,6 +714,8 @@
   .farmInfo .socialsContainer .socialLink a {
     color: #fff;
     text-decoration: none;
+    display: flex;
+    align-items: center;
   }
 
   .farmInfo .socialsContainer button {

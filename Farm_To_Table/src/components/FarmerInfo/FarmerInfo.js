@@ -12,10 +12,13 @@ export default function FarmerInfo(props) {
 
     let ttf = {
         "id": 0,
+        "logo": "",
         "img": "../imgs/tian_tian_farm.png",
         "name": "Tian Tian Farm",
         "address": "24026 Wax Orchard Rd SW, Vashon, WA 98070",
-        "website": "https://www.tiantian.farm/"
+        "website": "https://www.tiantian.farm/",
+        "igLink": "https://www.instagram.com/tiantian.farm/",
+        "fbLink": "https://m.facebook.com/TianTianfarm"
     };
 
     let farm = farmsData.find(farm => farm.id === id) ?? ttf
@@ -39,10 +42,10 @@ export default function FarmerInfo(props) {
             <h1>{farm.name}</h1>
 
             <div className="profileRow">
-                <img className="coverPic" src={farm.img} alt={"Images of " + farm.name}></img>
+                <img className="coverPic" src={farm.coverImg} alt={"Images of " + farm.name}></img>
                 <div className="badgeAndGrows">
                     <Badge 
-                        img={`/imgs/tian_tian_farm.png`} 
+                        img={farm.logo} 
                         name={farm.name}
                         address={farm.address}
                     />
@@ -83,16 +86,13 @@ export default function FarmerInfo(props) {
 
             <div className="socialsContainer">
                 <div className="socialLink" id="igLink">
-                    <img src={`/imgs/social_icons/instagram_logo.svg`} alt="Instagram Icon" />
-                    <p><a href="https://www.instagram.com/tiantian.farm/">@tiantian.farm</a></p>
+                    <a href={farm.igLink}><img src={`/imgs/social_icons/instagram_logo.svg`} alt="Instagram Icon"/><span>Instagram</span></a>
                 </div>
                 <div className="socialLink" id="fbLink">
-                    <img src={`/imgs/social_icons/facebook_logo.svg`} alt="Facebook Icon" />
-                    <p><a href="https://m.facebook.com/TianTianfarm">@Tian Tian Farm</a></p>
+                    <a href={farm.fbLink}><img src={`/imgs/social_icons/facebook_logo.svg`} alt="Facebook Icon" /><span>Facebook</span></a>
                 </div>
                 <div className="socialLink" id="webLink">
-                    <img src={`/imgs/social_icons/website_logo.svg`} alt="Webpage Icon" />
-                    <p><a href="https://www.tiantian.farm">www.tiantian.farm</a></p>
+                    <a href={farm.website}><img src={`/imgs/social_icons/website_logo.svg`} alt="Webpage Icon" /><span>Website</span></a>
                 </div>
                 <button>Sign Up for their CSA</button>
             </div>
