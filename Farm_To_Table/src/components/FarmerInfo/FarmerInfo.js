@@ -12,8 +12,8 @@ export default function FarmerInfo(props) {
 
     let ttf = {
         "id": 0,
-        "logo": "",
-        "img": "../imgs/tian_tian_farm.png",
+        "logo": "/imgs/tian_tian_farm_logo.png",
+        "coverImg": "/imgs/tian_tian_farm_cover.jpg",
         "name": "Tian Tian Farm",
         "address": "24026 Wax Orchard Rd SW, Vashon, WA 98070",
         "website": "https://www.tiantian.farm/",
@@ -42,10 +42,10 @@ export default function FarmerInfo(props) {
             <h1>{farm.name}</h1>
 
             <div className="profileRow">
-                <img className="coverPic" src={farm.coverImg} alt={"Images of " + farm.name}></img>
+                <img className="coverPic" src={".."+farm.coverImg} alt={"Images of " + farm.name}></img>
                 <div className="badgeAndGrows">
                     <Badge 
-                        img={farm.logo} 
+                        img={".."+farm.logo}
                         name={farm.name}
                         address={farm.address}
                     />
