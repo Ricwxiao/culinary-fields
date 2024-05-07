@@ -1,20 +1,35 @@
 import React from "react";
 import Badge from "./FarmerInfo/Badge";
+import farmsData from "../data/farms.json"
+import { NavLink } from "react-router-dom";
 
 export default function Article() {
-    let farmName = "Tian Tian Farm"
+
+    let ttf = {
+        "id": 0,
+        "logo": "/imgs/tian_tian_farm_logo.png",
+        "coverImg": "/imgs/tian_tian_farm_cover.jpg",
+        "name": "Tian Tian Farm",
+        "address": "24026 Wax Orchard Rd SW, Vashon, WA 98070",
+        "website": "https://www.tiantian.farm/",
+        "igLink": "https://www.instagram.com/tiantian.farm/",
+        "fbLink": "https://m.facebook.com/TianTianfarm"
+    };
+    let farm = farmsData.find(farm => farm.id === 0) ?? ttf
 
     return (
         <div className="articlePage">
             <h1>Story of Tian Tian Farm: Farming for the Asian Community</h1>
             <p className="articleBy">By <span className="authour">Jade Yamazaki Stewart</span> <span className="job">Seattle Times staff reporter</span></p>
             <p>Aug. 12, 2021 at 6:00 am</p>
-            <Badge
-                img={`/imgs/tian_tian_farm.png`} 
-                name={farmName}
-                address={"24026 Wax Orchard Rd SW, Vashon, WA 98070"}
-            />
-            <img className="articleImg" src={`/imgs/tian_tian_farm_pic.jpg`} alt={"Images of " + farmName}></img>
+            <NavLink to={`/farmerinfo/${farm.id}`}>
+                <Badge
+                    img={farm.logo} 
+                    name={farm.name}
+                    address={farm.address}
+                />  
+            </NavLink>
+            <img className="articleImg" src={farm.coverImg} alt={"Images of " + farm.name}></img>
 
             <p className="splt-parag">
                 In the heart of Seattle's vibrant urban landscape, a humble Asian farmer tends to rows of vibrant green vegetables, their hands nurturing tender shoots and hearty crops that will soon find their way onto the tables of eager customers. In an illuminating article, we explore the journey of this dedicated farmer as they cultivate a thriving business rooted in tradition and community.

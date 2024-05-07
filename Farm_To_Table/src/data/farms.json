@@ -1,8 +1,8 @@
 [
   {
     "id": 0,
-    "logo": "../imgs/tian_tian_farm_logo.png",
-    "coverImg": "../imgs/tian_tian_farm_cover.jpg",
+    "logo": "/imgs/tian_tian_farm_logo.png",
+    "coverImg": "/imgs/tian_tian_farm_cover.jpg",
     "name": "Tian Tian Farm",
     "address": "24026 Wax Orchard Rd SW, Vashon, WA 98070",
     "website": "https://www.tiantian.farm/",
