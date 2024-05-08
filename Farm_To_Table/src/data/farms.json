@@ -12,7 +12,7 @@
   {
     "id": 1,
     "logo": "/imgs/tuk_muk_farm_logo.png",
-    "coverImg": "/imgs/tuk_muk_farm_cover.png",
+    "coverImg": "/imgs/tuk_muk_farm_cover.jpg",
     "name": "Tuk Muk Farm",
     "address": "16215 140th Pl NE Woodinville, WA 98072",
     "website": "https://www.tukmukfarm.com/",
@@ -22,7 +22,7 @@
   {
     "id": 2,
     "logo": "/imgs/ayako_family_logo.png",
-    "coverImg": "/imgs/ayako_family_cover.png",
+    "coverImg": "/imgs/ayako_family_cover.jpg",
     "name": "Ayako & Family",
     "address": "330 Mellis Rd, Wapato, WA 98951",
     "website": "https://ayakoandfamily.com/",
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "logo": "/imgs/moua_farm_logo.png",
-    "coverImg": "/imgs/moua_farm_cover.png",
+    "coverImg": "/imgs/moua_farm_cover.jpg",
     "name": "Moua Farm",
     "address": "SILVER. OKUM. BLDG., Seattle, WA 98101",
     "website": "https://www.pikeplacemarket.org/vendor/moua-farm/",
