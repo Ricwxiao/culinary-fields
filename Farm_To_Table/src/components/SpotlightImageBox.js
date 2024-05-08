@@ -16,12 +16,7 @@ export default function SpotlightImageBox ({src, text, text2, alt, width, height
 
       </div>
     </div>
-<<<<<<< HEAD
 
   )}
 
 
-=======
-  )
-}
->>>>>>> 62fed24ee6c9afedc44d7a712130dd7b93840a19
