@@ -20,11 +20,11 @@ function ImageCarousel({ height, width }) {
 
       </div>
       <div className="right-panel">
-        <div className="top-image">
+        {/* <div className="top-image"> */}
           {/* <img src={bokchoyreceipeImg} alt="farmer spotlight" width="100%" height="100%"/> */}
           <SpotlightImageBox src={bokchoyreceipeImg1} alt="farmer spotlight" width="600px" height="500px" text="Bok Choy in season: Here are some of the most popular recipes" text2="In Season" />
 
-        </div>
+        {/* </div> */}
         {/* <div className="bottom-image">
         <SpotlightImageBox src={caphillImg} alt="farmer spotlight" width="500px" height="250px" text="Cap Hill" text2="New"/>
 
