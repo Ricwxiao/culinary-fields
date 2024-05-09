@@ -76,7 +76,7 @@ export default function HomePage(props) {
             </a>
           </div>
         </div>
-        <p class="description"> You are more than likely to find these produces at the local farmers market in Puget Sound </p>
+        <p class="description"> You are more than likely to find these produces at the local farmers market in Puget Sound below: </p>
         <div class="Produce-Info-Container">
 
           <div class="market-list">
