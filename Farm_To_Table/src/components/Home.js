@@ -37,16 +37,16 @@ export default function HomePage(props) {
     <body>
       <div className="HomePage">
         <header className="first-title">
-          <h1 className="header"> Spotlight </h1>
+          <h1 className="header"> Latest Stories from the Field </h1>
         </header>
         <ImageCarousel height={500} width={1000} />
 
         <header>
-          <h1 className="header"> IN SEASON </h1>
-          <div class="Produces-title">
-            <h2 className="sub-header"> Produces </h2>
+          <h1 className="header">Produce </h1>
+          {/* <div class="Produces-title">
+            <h2 className="sub-header"> In Season </h2>
             <img src="/imgs/home_page/right-arrow.svg" alt="arrow"></img>
-          </div>
+          </div> */}
 
         </header>
         <div class="produce-container">
@@ -76,7 +76,7 @@ export default function HomePage(props) {
             </a>
           </div>
         </div>
-        <p class="description"> You are more than likely to find these produces at the local farmers market in Puget Sound below: </p>
+        <p class="description"> You are more than likely to find these in season produce at your local farmers market in Puget Sound below: </p>
         <div class="Produce-Info-Container">
 
           <div class="market-list">
@@ -113,8 +113,10 @@ export default function HomePage(props) {
           </div>
         </div>
         <div class="Receipes-title">
-          <h2 className="sub-header"> Receipes </h2>
-          <img src="/imgs/home_page/right-arrow.svg" alt="arrow"></img>
+          <h1 className="sub-header"> Recipes </h1>
+          {/* <NavLink to="/recipes">
+            <img src="/imgs/home_page/right-arrow.svg" alt="arrow"></img>
+          </NavLink> */}
         </div>
         <div class="container">
           <div className = "item-2">

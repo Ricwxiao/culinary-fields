@@ -277,17 +277,19 @@
   padding-bottom: 30px;
   margin-left: 5em;
   margin-right: 5em;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .left-panel {
   border: 0px solid white;
+  padding: 0.25em;
   width: 80%;
 }
 
 .right-panel {
   display: flex;
   flex-direction: column;
+  padding: 0.25em;
   border: 0px solid white;
   width: 80%;
 
@@ -328,7 +330,8 @@
   text-align: center;
   margin-left: 5px;
   height: 100%;
-  width: 30%
+  width: 30%;
+  color: green;
 }
 
 .image-container {
@@ -347,14 +350,13 @@
 .text-overlay {
   color: white;
   font-weight: bolder;
-  padding-left: 0px;
   /* padding-right: 50px;*/
-  padding: 10px;
-  font-size: 1em;
+  padding: 0.5em;
+  font-size: 1.25em;
   background-color: rgba(0,0,0, 0.5);
-  margin: 0;
-  width: auto;
-  border-radius: 100px;
+  margin: 0.25em;
+  width: fit-content;
+  border-radius: 25px;
 }
 
 

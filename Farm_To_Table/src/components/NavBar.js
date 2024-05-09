@@ -19,11 +19,11 @@ function Navbar() {
             Farm & Food Finder
           </NavLink>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <NavLink to="/events" className="nav-link">
             Events
           </NavLink>
-        </li>
+        </li> */}
         <li className="nav-item">
           <NavLink to="/recipes" className="nav-link">
             Recipes
