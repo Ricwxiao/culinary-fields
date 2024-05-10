@@ -14,8 +14,11 @@ import kimchiImg from "../components/img/kimchi.jpg";
 import stirfryImg from "../components/img/stirfry.jpg";
 import soysaucechoysumImg from "../components/img/soysaucechoysum.jpg";
 import ImageBox from './ImageBox';
+import stirfrybokchoyImg from '../components/img/bok-choy-stir-fry-recipe.jpg';
+import kungpaochickenImg from '../components/img/Kung-Pao-Chicken.jpeg';
 import ImageIcon from './ImageIcon';
-
+import receipe from '../data/recipe.json';
+// import { NavLink } from "react-router-dom";
 
 
 
@@ -126,13 +129,19 @@ export default function HomePage(props) {
         </div>
         <div class="container">
           <div className = "item-2">
-            <ImageBox src={stirfryImg} alt="Receipe 1" width="350px" height="350px" text="Stir Fry Bitter Melon" />
+            <NavLink to={"recipe-details/Stir-Fried-Bittermelon"}>
+              <ImageBox src={stirfryImg} alt="Receipe 1" width="350px" height="350px" text="Stir Fry Bitter Melon" />
+            </NavLink>
           </div>
           <div className = "item-2">
-            <ImageBox src={soysaucechoysumImg} alt="Receipe 2" width="350px" height="350px" text="Soy Sauce Choysum"/>
+            <NavLink to={"recipe-details/Stir-Fried-Bok-Choy"}>
+                <ImageBox src={stirfrybokchoyImg} alt="Receipe 2" width="350px" height="350px" text="Stir Fry Bok Choy"/>
+            </NavLink>
           </div>
           <div className = "item-2">
-            <ImageBox src={kimchiImg} alt="Receipe 3" width="350px" height="350px" text="Easy Kimchi" />
+            <NavLink to={"recipe-details/Better-Than-Takeout:-Kung-Pao-Chicken"}>
+              <ImageBox src={kungpaochickenImg} alt="Receipe 3" width="350px" height="350px" text="Kung Pao Chicken" />
+            </NavLink>
           </div>
         </div>
         {/* <header>
