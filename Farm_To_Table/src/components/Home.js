@@ -45,7 +45,7 @@ export default function HomePage(props) {
         <header className="first-title">
           <h1 className="header"> Latest Stories from the Field </h1>
         </header>
-        <ImageCarousel height={500} width={1000} />
+        <ImageCarousel /*height={500} width={1000}*/ />
 
         <header>
           <h1 className="header">Produce </h1>
