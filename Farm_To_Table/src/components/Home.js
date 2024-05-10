@@ -41,20 +41,16 @@ export default function HomePage(props) {
         <div className="missionPara">
           <h1>Discover local Asian produce and recipes shared by farmers in the Pacific Northwest</h1>
         </div>
-        </div>
-        <header className="first-title">
+      </div>
+      <div className='topbanner'>
           <h1 className="header"> Latest Stories from the Field </h1>
-        </header>
-        <ImageCarousel height={500} width={1000} />
-
-        <header>
+            <ImageCarousel height={500} width={1000} />
           <h1 className="header">Produce </h1>
           {/* <div class="Produces-title">
             <h2 className="sub-header"> In Season </h2>
             <img src="/imgs/home_page/right-arrow.svg" alt="arrow"></img>
           </div> */}
-
-        </header>
+      </div>
         <div class="produce-container">
           <div className = "item-1">
             <a href="https://www.uwajimaya.com/uwajipedia/bitter-melon-2/" target='_blank'>
