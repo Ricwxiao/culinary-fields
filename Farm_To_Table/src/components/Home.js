@@ -44,9 +44,7 @@ export default function HomePage(props) {
       </div>
       <div className='topbanner'>
           <h1 className="header"> Latest Stories from the Field </h1>
-        </header>
         <ImageCarousel /*height={500} width={1000}*/ />
-        <header>
           <h1 className="header">Produce </h1>
           {/* <div class="Produces-title">
             <h2 className="sub-header"> In Season </h2>
