@@ -1,37 +1,52 @@
 [
   {
     "id": 0,
-    "img": "../imgs/tian_tian_farm.png",
+    "logo": "/imgs/tian_tian_farm_logo.png",
+    "coverImg": "/imgs/tian_tian_farm_cover.jpg",
     "name": "Tian Tian Farm",
     "address": "24026 Wax Orchard Rd SW, Vashon, WA 98070",
-    "website": "https://www.tiantian.farm/"
+    "website": "https://www.tiantian.farm/",
+    "igLink": "https://www.instagram.com/tiantian.farm/",
+    "fbLink": "https://m.facebook.com/TianTianfarm"
   },
   {
     "id": 1,
-    "img": "",
+    "logo": "/imgs/tuk_muk_farm_logo.png",
+    "coverImg": "/imgs/tuk_muk_farm_cover.jpg",
     "name": "Tuk Muk Farm",
     "address": "16215 140th Pl NE Woodinville, WA 98072",
-    "website": "https://www.tukmukfarm.com/"
+    "website": "https://www.tukmukfarm.com/",
+    "igLink": "https://www.instagram.com/tukmukfarm/",
+    "fbLink": "https://www.facebook.com/TukMukFarm/"
   },
   {
     "id": 2,
-    "img": "",
+    "logo": "/imgs/ayako_family_logo.png",
+    "coverImg": "/imgs/ayako_family_cover.jpg",
     "name": "Ayako & Family",
     "address": "330 Mellis Rd, Wapato, WA 98951",
-    "website": "https://ayakoandfamily.com/"
+    "website": "https://ayakoandfamily.com/",
+    "igLink": "https://www.instagram.com/ayakoandfamily/",
+    "fbLink": "https://www.facebook.com/ayakoandfamily"
   },
   {
     "id": 3,
-    "img": "",
+    "logo": "/imgs/moua_farm_logo.png",
+    "coverImg": "/imgs/moua_farm_cover.jpg",
     "name": "Moua Farm",
     "address": "SILVER. OKUM. BLDG., Seattle, WA 98101",
-    "website": "https://www.pikeplacemarket.org/vendor/moua-farm/"
+    "website": "https://www.pikeplacemarket.org/vendor/moua-farm/",
+    "igLink": "https://www.instagram.com/pikeplacepublicmarket/",
+    "fbLink": "https://www.facebook.com/PublicMarketCenter"
   },
   {
     "id": 4,
-    "img": "",
+    "logo": "/imgs/acrs-logo.png",
+    "coverImg": "/imgs/acrs.jpg",
     "name": "Seattle Community Farm",
     "address": "3639 Martin Luther King Junior Way S.",
-    "website": "https://acrs.org/seattle-community-farm/"
+    "website": "https://acrs.org/seattle-community-farm/",
+    "igLink": "https://www.instagram.com/acrsnews/",
+    "fbLink": "https://www.facebook.com/ACRSOnline/"
   }
 ]

@@ -43,22 +43,87 @@ export default function HomePage(props) {
         </div>
         </div>
         <header className="first-title">
-          <h1 className="header"> Spotlight </h1>
+          <h1 className="header"> Latest Stories from the Field </h1>
         </header>
         <ImageCarousel height={500} width={1000} />
 
         <header>
-          <h1 className="header"> IN SEASON </h1>
-          <h2 className="sub-header"> Produces </h2>
+          <h1 className="header">Produce </h1>
+          {/* <div class="Produces-title">
+            <h2 className="sub-header"> In Season </h2>
+            <img src="/imgs/home_page/right-arrow.svg" alt="arrow"></img>
+          </div> */}
+
         </header>
         <div class="produce-container">
-          <div className = "item-1"> <img src={bittermelonImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
-          <div className = "item-1"> <img src={eggplantImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
-          <div className = "item-1"> <img src={greenonionImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
-          <div className = "item-1"> <img src={bokchoyImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
-          <div className = "item-1"> <img src={califlowerImg} alt="farmer spotlight" width="204px" height="184px"/> </div>
+          <div className = "item-1">
+            <a href="https://www.uwajimaya.com/uwajipedia/bitter-melon-2/" target='_blank'>
+              <img src={bittermelonImg} alt="farmer spotlight" width="204px" height="184px"/>
+            </a>
+          </div>
+          <div className = "item-1">
+            <a href='https://mynorthwestgarden.com/home/eggplant' target='_blank'>
+              <img src={eggplantImg} alt="farmer spotlight" width="204px" height="184px"/>
+            </a>
+          </div>
+          <div className = "item-1">
+            <a href='https://www.seasonalfoodguide.org/veg/green-onions/washington' target='_blank'>
+              <img src={greenonionImg} alt="farmer spotlight" width="204px" height="184px"/>
+            </a>
+          </div>
+          <div className = "item-1">
+            <a href='https://fenugreeklove.wordpress.com/category/bok-choy/' target='_blank'>
+              <img src={bokchoyImg} alt="farmer spotlight" width="204px" height="184px"/>
+            </a>
+          </div>
+          <div className = "item-1">
+            <a href='' target='_blank'>
+              <img src={califlowerImg} alt="farmer spotlight" width="204px" height="184px"/>
+            </a>
+          </div>
         </div>
-          <h2 className="sub-header"> Receipes </h2>
+        <p class="description"> You are more than likely to find these in season produce at your local farmers market in Puget Sound below: </p>
+        <div class="Produce-Info-Container">
+
+          <div class="market-list">
+            <h2> University District Farmer's Market</h2>
+            <p class="clickable-text"><a href="https://seattlefarmersmarkets.org/udfm" className='fm-link'> <span class="material-symbols-outlined">language</span> Website</a></p>
+            {/* <a href='https://seattlefarmersmarkets.org/udfm' class="fm-web"> </a>
+              <span class="fm-text"> Website </span> */}
+            <p><span class="material-symbols-outlined">pin_drop</span> 5031 University Wy NE, Seattle, WA 98105 </p>
+          </div>
+          <div class="market-list">
+            <h2> West Seattle Farmer's Market </h2>
+            <p class="clickable-text"><a href='https://seattlefarmersmarkets.org/wsfm' className='fm-link'> <span class="material-symbols-outlined">language</span> Website </a></p>
+            <p><span class="material-symbols-outlined">pin_drop</span> Cnr SW Alaska St &, California Ave SW, Seattle, WA 98116 </p>
+          </div>
+          <div class="market-list">
+            <h2> Ballard Farmer's Market </h2>
+            <p class="clickable-text"><a href='https://www.sfmamarkets.com/visit-ballard-farmers-market' className='fm-link'> <span class="material-symbols-outlined">language</span> Website </a></p>
+            <p><span class="material-symbols-outlined">pin_drop</span> 5345 Ballard Ave NW, Seattle, WA 98107 </p>
+          </div>
+          <div class="market-list">
+            <h2> Capitol Hill Farmer's Market </h2>
+            <p class="clickable-text"><a href='https://seattlefarmersmarkets.org/chfm' className='fm-link'><span class="material-symbols-outlined">language</span> Website </a></p>
+            <p><span class="material-symbols-outlined">pin_drop</span> E Barbara Bailey Way, Seattle, WA 98112 </p>
+          </div>
+          <div class="market-list">
+            <h2> Columbia City Farmer's Market </h2>
+            <p class="clickable-text"><a href='https://seattlefarmersmarkets.org/ccfm' className='fm-link'><span class="material-symbols-outlined">language</span> Website </a></p>
+            <p><span class="material-symbols-outlined">pin_drop</span> 37th Ave S, Seattle, WA 98118 </p>
+          </div>
+          <div class="market-list">
+            <h2> Lake City Farmer's Market </h2>
+            <p class="clickable-text"><a href='https://seattlefarmersmarkets.org/lcfm' className='fm-link'> <span class="material-symbols-outlined">language</span> Website </a></p>
+            <p><span class="material-symbols-outlined">pin_drop</span> NE 125th St & 28th Ave NE, 98125 </p>
+          </div>
+        </div>
+        <div class="Receipes-title">
+          <h1 className="sub-header"> Recipes </h1>
+          {/* <NavLink to="/recipes">
+            <img src="/imgs/home_page/right-arrow.svg" alt="arrow"></img>
+          </NavLink> */}
+        </div>
         <div class="container">
           <div className = "item-2">
             <ImageBox src={stirfryImg} alt="Receipe 1" width="350px" height="350px" text="Stir Fry Bitter Melon" />
