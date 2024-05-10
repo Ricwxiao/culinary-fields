@@ -36,6 +36,12 @@ export default function HomePage(props) {
   return (
     <body>
       <div className="HomePage">
+        <div class="vegeContainer">
+        <img className="missionImg" src="https://foodwise.org/sites/default/files/asian_vegetables.jpg"></img>
+        <div className="missionPara">
+          <h1>Discover local Asian produce and recipes shared by farmers in the Pacific Northwest</h1>
+        </div>
+        </div>
         <header className="first-title">
           <h1 className="header"> Spotlight </h1>
         </header>
