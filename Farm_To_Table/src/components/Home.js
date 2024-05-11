@@ -14,11 +14,10 @@ import kimchiImg from "../components/img/kimchi.jpg";
 import stirfryImg from "../components/img/stirfry.jpg";
 import soysaucechoysumImg from "../components/img/soysaucechoysum.jpg";
 import ImageBox from './ImageBox';
+import ImageIcon from './ImageIcon';
 import stirfrybokchoyImg from '../components/img/bok-choy-stir-fry-recipe.jpg';
 import kungpaochickenImg from '../components/img/Kung-Pao-Chicken.jpeg';
-import ImageIcon from './ImageIcon';
-import receipe from '../data/recipe.json';
-// import { NavLink } from "react-router-dom";
+
 
 
 
@@ -128,7 +127,7 @@ export default function HomePage(props) {
           </NavLink> */}
         </div>
         <div class="container">
-          <div className = "item-2">
+        <div className = "item-2">
             <NavLink to={"recipe-details/Stir-Fried-Bittermelon"}>
               <ImageBox src={stirfryImg} alt="Receipe 1" width="350px" height="350px" text="Stir Fry Bitter Melon" />
             </NavLink>
@@ -183,5 +182,4 @@ export default function HomePage(props) {
 
 }
 */
-
 
