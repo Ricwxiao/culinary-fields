@@ -237,24 +237,6 @@
   height: 100%;
 }
 
-/* .event-info-left {
-  display: flex;
-  flex-direction: column;
-  width: 10px;
-}
-
-.event-info-middle {
-  display: flex;
-  flex-direction: column;
-  width: 10px;
-}
-
-.event-info-right {
-  display: flex;
-  flex-direction: column;
-  width: 10px;
-} */
-
 .description-container {
   display: flex;
   flex-direction: row;
@@ -264,32 +246,20 @@
 .description {
   border: 0px solid white;
 }
-/*
-.image-carousel-container {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  flex-shrink: 1;
-  padding-bottom: 30px;
-  margin-left: 5em;
-  margin-right: 5em;
-  justify-content: center;
-}
-*/
-.left-panel {
+
+/* .left-panel {
   border: 0px solid white;
-  width: 80%;
 }
 
 .right-panel {
   border: 0px solid white;
-  width: 80%;
-}
+} */
 
 .image-carousel-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
   flex-shrink: 1;
   padding-bottom: 30px;
@@ -299,15 +269,13 @@
 
 .left-panel,
 .right-panel {
-  flex: 1 1 50%; /* Each panel takes 50% of the container width */
-  padding: 10px; /* Add padding for spacing */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border: 0px solid white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .left-panel,
   .right-panel {
-    flex: 1 1 100%; /* Each panel takes 100% of the container width on smaller screens */
+    flex-basis: 50%; /* Each panel takes 100% of the container width on smaller screens */
   }
 }
 
@@ -372,7 +340,6 @@
   position: relative;
   display: inline-block;
   padding-left: 0%;
-  /* width: 100%; */
   height: auto;
 }
 
@@ -385,7 +352,6 @@
   color: white;
   font-weight: bolder;
   padding-left: 0px;
-  /* padding-right: 50px;*/
   padding: 10px;
   font-size: 1em;
   background-color: rgba(0,0,0, 0.5);
@@ -399,11 +365,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  /* height: 100%; */
-  /* display: inline-block; */
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 /*----------------------------------------------------------------------------*/
